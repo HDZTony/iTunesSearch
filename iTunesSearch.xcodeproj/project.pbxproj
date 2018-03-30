@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9EF206D3AD400C413B6 /* AppDelegate.m */; };
-		A268D9F3206D3AD400C413B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9F2206D3AD400C413B6 /* ViewController.m */; };
+		A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */; };
 		A268D9F6206D3AD400C413B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268D9F4206D3AD400C413B6 /* Main.storyboard */; };
 		A268D9F8206D3AD400C413B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A268D9F7206D3AD400C413B6 /* Assets.xcassets */; };
 		A268D9FB206D3AD400C413B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268D9F9206D3AD400C413B6 /* LaunchScreen.storyboard */; };
 		A268D9FE206D3AD400C413B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9FD206D3AD400C413B6 /* main.m */; };
 		A268DA08206D3AD400C413B6 /* iTunesSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA07206D3AD400C413B6 /* iTunesSearchTests.m */; };
 		A268DA13206D3AD400C413B6 /* iTunesSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA12206D3AD400C413B6 /* iTunesSearchUITests.m */; };
+		A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA21206D3DE400C413B6 /* HDZSearchResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,8 @@
 		A268D9EB206D3AD400C413B6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268D9EE206D3AD400C413B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A268D9EF206D3AD400C413B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A268D9F1206D3AD400C413B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A268D9F2206D3AD400C413B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A268D9F1206D3AD400C413B6 /* HDZSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearchViewController.h; sourceTree = "<group>"; };
+		A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchViewController.m; sourceTree = "<group>"; };
 		A268D9F5206D3AD400C413B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A268D9F7206D3AD400C413B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A268D9FA206D3AD400C413B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,8 @@
 		A268DA0E206D3AD400C413B6 /* iTunesSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268DA12206D3AD400C413B6 /* iTunesSearchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTunesSearchUITests.m; sourceTree = "<group>"; };
 		A268DA14206D3AD400C413B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A268DA20206D3DE400C413B6 /* HDZSearchResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearchResult.h; sourceTree = "<group>"; };
+		A268DA21206D3DE400C413B6 /* HDZSearchResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				A268D9EC206D3AD400C413B6 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		A268D9EC206D3AD400C413B6 /* Products */ = {
 			isa = PBXGroup;
@@ -103,9 +107,11 @@
 			children = (
 				A268D9EE206D3AD400C413B6 /* AppDelegate.h */,
 				A268D9EF206D3AD400C413B6 /* AppDelegate.m */,
-				A268D9F1206D3AD400C413B6 /* ViewController.h */,
-				A268D9F2206D3AD400C413B6 /* ViewController.m */,
+				A268D9F1206D3AD400C413B6 /* HDZSearchViewController.h */,
+				A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */,
 				A268D9F4206D3AD400C413B6 /* Main.storyboard */,
+				A268DA20206D3DE400C413B6 /* HDZSearchResult.h */,
+				A268DA21206D3DE400C413B6 /* HDZSearchResult.m */,
 				A268D9F7206D3AD400C413B6 /* Assets.xcassets */,
 				A268D9F9206D3AD400C413B6 /* LaunchScreen.storyboard */,
 				A268D9FC206D3AD400C413B6 /* Info.plist */,
@@ -194,6 +200,7 @@
 		A268D9E3206D3AD400C413B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HDZ;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "何东洲";
 				TargetAttributes = {
@@ -265,9 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A268D9F3206D3AD400C413B6 /* ViewController.m in Sources */,
+				A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */,
 				A268D9FE206D3AD400C413B6 /* main.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
+				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

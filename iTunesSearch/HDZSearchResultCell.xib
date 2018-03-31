@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CpG-en-Yhn" customClass="HDZSearchResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CpG-en-Yhn" id="mE4-ln-Wac">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-yr-6Sn" userLabel="Name Label">
+                        <rect key="frame" x="84" y="16" width="220" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elt-3D-2df" userLabel="Artist Name Label">
+                        <rect key="frame" x="84" y="44" width="220" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rIS-d1-gg9" userLabel="Artwork Image View">
+                        <rect key="frame" x="16" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="A0A-GM-biQ"/>
+                            <constraint firstAttribute="width" constant="60" id="dID-mM-F8y"/>
+                            <constraint firstAttribute="height" constant="60" id="hfr-Nq-HuR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="elt-3D-2df" firstAttribute="top" secondItem="hgb-yr-6Sn" secondAttribute="bottom" constant="7" id="0Lb-Zz-iqq"/>
+                    <constraint firstItem="rIS-d1-gg9" firstAttribute="top" secondItem="mE4-ln-Wac" secondAttribute="top" constant="10" id="Hpw-X2-shn"/>
+                    <constraint firstItem="elt-3D-2df" firstAttribute="trailing" secondItem="hgb-yr-6Sn" secondAttribute="trailing" id="KHs-tb-9gx"/>
+                    <constraint firstItem="elt-3D-2df" firstAttribute="leading" secondItem="hgb-yr-6Sn" secondAttribute="leading" id="LQ2-VD-9Eh"/>
+                    <constraint firstItem="hgb-yr-6Sn" firstAttribute="trailing" secondItem="mE4-ln-Wac" secondAttribute="trailingMargin" id="Vqz-Mo-JFl"/>
+                    <constraint firstItem="rIS-d1-gg9" firstAttribute="leading" secondItem="mE4-ln-Wac" secondAttribute="leading" constant="16" id="nXH-Lc-swj"/>
+                    <constraint firstItem="hgb-yr-6Sn" firstAttribute="leading" secondItem="rIS-d1-gg9" secondAttribute="trailing" constant="8" id="old-SS-fXD"/>
+                    <constraint firstItem="hgb-yr-6Sn" firstAttribute="top" secondItem="mE4-ln-Wac" secondAttribute="topMargin" constant="5" id="y3A-Jj-d5W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artworkImageView" destination="rIS-d1-gg9" id="7iJ-MU-NTD"/>
+                <outlet property="artworkNameLabel" destination="elt-3D-2df" id="MJJ-dX-Znw"/>
+                <outlet property="nameLabel" destination="hgb-yr-6Sn" id="VEr-Xa-73r"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="-20"/>
+        </tableViewCell>
+    </objects>
+</document>

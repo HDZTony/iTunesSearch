@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A211D0E2206E305C0085CEBA /* HDZNothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A211D0E1206E305C0085CEBA /* HDZNothingFoundCell.xib */; };
+		A211D0E6206E307F0085CEBA /* HDZSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */; };
+		A211D0E7206E307F0085CEBA /* HDZSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */; };
 		A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9EF206D3AD400C413B6 /* AppDelegate.m */; };
 		A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */; };
 		A268D9F6206D3AD400C413B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268D9F4206D3AD400C413B6 /* Main.storyboard */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A211D0E1206E305C0085CEBA /* HDZNothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDZNothingFoundCell.xib; sourceTree = "<group>"; };
+		A211D0E3206E307F0085CEBA /* HDZSearchResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearchResultCell.h; sourceTree = "<group>"; };
+		A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchResultCell.m; sourceTree = "<group>"; };
+		A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDZSearchResultCell.xib; sourceTree = "<group>"; };
 		A268D9EB206D3AD400C413B6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268D9EE206D3AD400C413B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A268D9EF206D3AD400C413B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +116,10 @@
 				A268D9EF206D3AD400C413B6 /* AppDelegate.m */,
 				A268D9F1206D3AD400C413B6 /* HDZSearchViewController.h */,
 				A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */,
+				A211D0E3206E307F0085CEBA /* HDZSearchResultCell.h */,
+				A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */,
+				A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */,
+				A211D0E1206E305C0085CEBA /* HDZNothingFoundCell.xib */,
 				A268D9F4206D3AD400C413B6 /* Main.storyboard */,
 				A268DA20206D3DE400C413B6 /* HDZSearchResult.h */,
 				A268DA21206D3DE400C413B6 /* HDZSearchResult.m */,
@@ -246,8 +257,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A268D9FB206D3AD400C413B6 /* LaunchScreen.storyboard in Resources */,
+				A211D0E2206E305C0085CEBA /* HDZNothingFoundCell.xib in Resources */,
 				A268D9F8206D3AD400C413B6 /* Assets.xcassets in Resources */,
 				A268D9F6206D3AD400C413B6 /* Main.storyboard in Resources */,
+				A211D0E7206E307F0085CEBA /* HDZSearchResultCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +287,7 @@
 			files = (
 				A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */,
 				A268D9FE206D3AD400C413B6 /* main.m in Sources */,
+				A211D0E6206E307F0085CEBA /* HDZSearchResultCell.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
 				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
 			);

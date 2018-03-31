@@ -8,6 +8,9 @@
 
 #import "HDZSearchViewController.h"
 #import "HDZSearchResult.h"
+#import "HDZSearchResultCell.h"
+static  NSString *const ksearchResultCell = @"HDZSearchResultCell";
+static  NSString *const knothingFoundCell = @"HDZNothingFoundCell";
 @interface HDZSearchViewController ()<UISearchBarDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -22,6 +25,12 @@
     self.searchResults = [[NSMutableArray alloc]init];
     self.hasSearched = NO;
     self.tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    UINib *cell = [UINib nibWithNibName:ksearchResultCell bundle:nil];
+    [self.tableView registerNib:cell forCellReuseIdentifier:ksearchResultCell];
+    cell = [UINib nibWithNibName:knothingFoundCell bundle:nil];
+    [self.tableView registerNib:cell forCellReuseIdentifier:knothingFoundCell];
+    self.tableView.rowHeight = 80;
+    [self.searchBar becomeFirstResponder];
 }
 -(UIBarPosition)positionForBar:(id<UIBarPositioning>)bar{
     return UIBarPositionTop;
@@ -54,20 +63,15 @@
     }
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSString *cellIdentifier = @"SearchResultCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
-    }
-    if (self.searchResults.count == 0 ) {
-        cell.textLabel.text = @"Nothing found";
-        cell.detailTextLabel.text = @"";
+    if (self.searchResults.count == 0) {
+        return  [self.tableView dequeueReusableCellWithIdentifier:knothingFoundCell forIndexPath:indexPath];
     }else{
+        HDZSearchResultCell* cell = [self.tableView dequeueReusableCellWithIdentifier:ksearchResultCell forIndexPath:indexPath];
         HDZSearchResult *searchResult = self.searchResults[indexPath.row];
-        cell.textLabel.text = searchResult.name;
-        cell.detailTextLabel.text = searchResult.artistName;
+        cell.nameLabel.text = searchResult.name;
+        cell.artworkNameLabel.text = searchResult.artistName;
+        return cell;
     }
-    return cell;
 }
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.searchResults.count==0) {

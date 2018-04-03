@@ -10,6 +10,8 @@
 		A211D0E2206E305C0085CEBA /* HDZNothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A211D0E1206E305C0085CEBA /* HDZNothingFoundCell.xib */; };
 		A211D0E6206E307F0085CEBA /* HDZSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */; };
 		A211D0E7206E307F0085CEBA /* HDZSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */; };
+		A24E9B59207137360060CF92 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A24E9B55207137360060CF92 /* NSObject+YYModel.m */; };
+		A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A24E9B57207137360060CF92 /* YYClassInfo.m */; };
 		A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9EF206D3AD400C413B6 /* AppDelegate.m */; };
 		A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */; };
 		A268D9F6206D3AD400C413B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268D9F4206D3AD400C413B6 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		A268DA08206D3AD400C413B6 /* iTunesSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA07206D3AD400C413B6 /* iTunesSearchTests.m */; };
 		A268DA13206D3AD400C413B6 /* iTunesSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA12206D3AD400C413B6 /* iTunesSearchUITests.m */; };
 		A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA21206D3DE400C413B6 /* HDZSearchResult.m */; };
+		A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */; };
+		A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,11 @@
 		A211D0E3206E307F0085CEBA /* HDZSearchResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearchResultCell.h; sourceTree = "<group>"; };
 		A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchResultCell.m; sourceTree = "<group>"; };
 		A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDZSearchResultCell.xib; sourceTree = "<group>"; };
+		A24E9B54207137360060CF92 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		A24E9B55207137360060CF92 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		A24E9B56207137360060CF92 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		A24E9B57207137360060CF92 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		A24E9B58207137360060CF92 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		A268D9EB206D3AD400C413B6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268D9EE206D3AD400C413B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A268D9EF206D3AD400C413B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +70,9 @@
 		A268DA14206D3AD400C413B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A268DA20206D3DE400C413B6 /* HDZSearchResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearchResult.h; sourceTree = "<group>"; };
 		A268DA21206D3DE400C413B6 /* HDZSearchResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchResult.m; sourceTree = "<group>"; };
+		A2C1CEE42073297F008662FB /* UIImageView+HDZDownloadImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HDZDownloadImage.h"; sourceTree = "<group>"; };
+		A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HDZDownloadImage.m"; sourceTree = "<group>"; };
+		A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A24E9B53207137360060CF92 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				A24E9B54207137360060CF92 /* NSObject+YYModel.h */,
+				A24E9B55207137360060CF92 /* NSObject+YYModel.m */,
+				A24E9B56207137360060CF92 /* YYClassInfo.h */,
+				A24E9B57207137360060CF92 /* YYClassInfo.m */,
+				A24E9B58207137360060CF92 /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
 		A268D9E2206D3AD400C413B6 = {
 			isa = PBXGroup;
 			children = (
@@ -112,14 +136,18 @@
 		A268D9ED206D3AD400C413B6 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				A24E9B53207137360060CF92 /* YYModel */,
 				A268D9EE206D3AD400C413B6 /* AppDelegate.h */,
 				A268D9EF206D3AD400C413B6 /* AppDelegate.m */,
 				A268D9F1206D3AD400C413B6 /* HDZSearchViewController.h */,
 				A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */,
 				A211D0E3206E307F0085CEBA /* HDZSearchResultCell.h */,
 				A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */,
+				A2C1CEE42073297F008662FB /* UIImageView+HDZDownloadImage.h */,
+				A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */,
 				A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */,
 				A211D0E1206E305C0085CEBA /* HDZNothingFoundCell.xib */,
+				A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */,
 				A268D9F4206D3AD400C413B6 /* Main.storyboard */,
 				A268DA20206D3DE400C413B6 /* HDZSearchResult.h */,
 				A268DA21206D3DE400C413B6 /* HDZSearchResult.m */,
@@ -258,6 +286,7 @@
 			files = (
 				A268D9FB206D3AD400C413B6 /* LaunchScreen.storyboard in Resources */,
 				A211D0E2206E305C0085CEBA /* HDZNothingFoundCell.xib in Resources */,
+				A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */,
 				A268D9F8206D3AD400C413B6 /* Assets.xcassets in Resources */,
 				A268D9F6206D3AD400C413B6 /* Main.storyboard in Resources */,
 				A211D0E7206E307F0085CEBA /* HDZSearchResultCell.xib in Resources */,
@@ -286,8 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */,
+				A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */,
 				A268D9FE206D3AD400C413B6 /* main.m in Sources */,
+				A24E9B59207137360060CF92 /* NSObject+YYModel.m in Sources */,
 				A211D0E6206E307F0085CEBA /* HDZSearchResultCell.m in Sources */,
+				A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
 				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
 			);

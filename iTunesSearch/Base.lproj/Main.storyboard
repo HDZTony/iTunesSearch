@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,38 +15,70 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HDZSearchViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-kN-QKm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-kN-QKm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="90D-Da-4Jn"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="RIu-e0-bPX"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="App name,artist,song,alum,book" translatesAutoresizingMaskIntoConstraints="NO" id="NpH-8t-3Bj">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" placeholder="App name,artist,song,alum,book" translatesAutoresizingMaskIntoConstraints="NO" id="NpH-8t-3Bj">
+                                <rect key="frame" x="0.0" y="20" width="320" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="cTq-EJ-UNu"/>
                                 </connections>
                             </searchBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzp-yM-2aX">
+                                <rect key="frame" x="0.0" y="76" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="SnE-E9-3Qe">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="wKo-AW-u0c">
+                                            <rect key="frame" x="20.5" y="7" width="279" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="De0-e5-qi4"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mzp-yM-2aX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7kl-kS-8FN"/>
+                            <constraint firstItem="QlM-kN-QKm" firstAttribute="leading" secondItem="mzp-yM-2aX" secondAttribute="leading" id="K8b-SW-IwH"/>
+                            <constraint firstItem="NpH-8t-3Bj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="O5s-XU-7cf"/>
+                            <constraint firstItem="mzp-yM-2aX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bcS-yB-cvz"/>
+                            <constraint firstItem="mzp-yM-2aX" firstAttribute="top" secondItem="NpH-8t-3Bj" secondAttribute="bottom" id="cpq-Qh-Pcc"/>
+                            <constraint firstItem="QlM-kN-QKm" firstAttribute="trailing" secondItem="mzp-yM-2aX" secondAttribute="trailing" id="fub-if-Zbo"/>
+                            <constraint firstItem="NpH-8t-3Bj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gfg-Js-2js"/>
+                            <constraint firstItem="NpH-8t-3Bj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hkN-GI-BDW"/>
+                            <constraint firstItem="QlM-kN-QKm" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sQ5-6N-0O1"/>
+                            <constraint firstItem="QlM-kN-QKm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="svz-bb-SjJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="NpH-8t-3Bj" id="G4k-hu-J3N"/>
+                        <outlet property="segmentedControl" destination="wKo-AW-u0c" id="lZV-G6-dxo"/>
                         <outlet property="tableView" destination="QlM-kN-QKm" id="7Pe-nX-NBW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="118.29085457271366"/>
+            <point key="canvasLocation" x="114.375" y="117.25352112676056"/>
         </scene>
     </scenes>
 </document>

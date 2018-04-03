@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class HDZSearchResult;
 @interface HDZSearchResultCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *artworkImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *artworkNameLabel;
-
+- (void)configureForResult:(HDZSearchResult *)result;
 @end

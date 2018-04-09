@@ -22,6 +22,7 @@
 		A268DA13206D3AD400C413B6 /* iTunesSearchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA12206D3AD400C413B6 /* iTunesSearchUITests.m */; };
 		A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A268DA21206D3DE400C413B6 /* HDZSearchResult.m */; };
 		A269DBB6207AFB0D004418A4 /* HDZSlideOutAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269DBB5207AFB0D004418A4 /* HDZSlideOutAnimationController.m */; };
+		A269DBF7207B273F004418A4 /* HDZSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A269DBF6207B273F004418A4 /* HDZSearch.m */; };
 		A26CF76B20765E130043395C /* HDZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CF76A20765E130043395C /* HDZGradientView.m */; };
 		A271FCCC20775A3400AE66EF /* HDZLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A271FCCB20775A3400AE66EF /* HDZLandscapeViewController.m */; };
 		A288846D207A41CE00657F99 /* HDZBounceAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A288846C207A41CE00657F99 /* HDZBounceAnimationController.m */; };
@@ -78,6 +79,8 @@
 		A268DA21206D3DE400C413B6 /* HDZSearchResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchResult.m; sourceTree = "<group>"; };
 		A269DBB4207AFB0D004418A4 /* HDZSlideOutAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSlideOutAnimationController.h; sourceTree = "<group>"; };
 		A269DBB5207AFB0D004418A4 /* HDZSlideOutAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSlideOutAnimationController.m; sourceTree = "<group>"; };
+		A269DBF5207B273F004418A4 /* HDZSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearch.h; sourceTree = "<group>"; };
+		A269DBF6207B273F004418A4 /* HDZSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearch.m; sourceTree = "<group>"; };
 		A26CF76920765E130043395C /* HDZGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGradientView.h; sourceTree = "<group>"; };
 		A26CF76A20765E130043395C /* HDZGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGradientView.m; sourceTree = "<group>"; };
 		A271FCCA20775A3400AE66EF /* HDZLandscapeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZLandscapeViewController.h; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				A271FCCA20775A3400AE66EF /* HDZLandscapeViewController.h */,
 				A271FCCB20775A3400AE66EF /* HDZLandscapeViewController.m */,
 				A26CF76920765E130043395C /* HDZGradientView.h */,
+				A269DBF5207B273F004418A4 /* HDZSearch.h */,
+				A269DBF6207B273F004418A4 /* HDZSearch.m */,
 				A26CF76A20765E130043395C /* HDZGradientView.m */,
 				A2AC7BAE2073BF3700C04707 /* HDZDetailViewController.h */,
 				A2AC7BAF2073BF3700C04707 /* HDZDetailViewController.m */,
@@ -348,6 +353,7 @@
 				A2FC2E522074727F0017D7A6 /* HDZDimmingPresentationController.m in Sources */,
 				A269DBB6207AFB0D004418A4 /* HDZSlideOutAnimationController.m in Sources */,
 				A2AC7BB02073BF3700C04707 /* HDZDetailViewController.m in Sources */,
+				A269DBF7207B273F004418A4 /* HDZSearch.m in Sources */,
 				A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */,
 				A271FCCC20775A3400AE66EF /* HDZLandscapeViewController.m in Sources */,
 				A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */,

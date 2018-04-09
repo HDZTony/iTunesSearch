@@ -7,6 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef NS_ENUM(NSInteger, HDZCategory) {
+    all,//默认从0开始
+    music,
+    software,
+    ebooks,
+};
+
 @class HDZSearchResult;
 @interface HDZSearch : NSObject
 @property (nonatomic,strong) NSMutableArray<HDZSearchResult *>* searchResults;
@@ -14,5 +21,5 @@
 @property (nonatomic,assign) BOOL isLoading;
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
 typedef void(^SearchComplete)(BOOL sucess);
-- (void)performSearchFortext:(NSString *)text category:(NSInteger )category completion:(SearchComplete)completion;
+- (void)performSearchFortext:(NSString *)text category:(HDZCategory )category completion:(SearchComplete)completion;
 @end

@@ -24,6 +24,31 @@
         return @"";
     }
 }
+-(NSString *)genre{
+    if (_itemGenre) {
+        return _itemGenre;
+    }else if (_bookGenre){
+        return _bookGenre.firstObject;
+    }
+    return @"";
+}
+- (double) price {
+    if (_trackPrice) {
+        return _trackPrice;
+    }else if (_collectionPrice){
+        return _collectionPrice;
+    }else{
+        return 0.0;
+    }
+}
+-(NSString *)storeURL{
+    if (_trackViewUrl) {
+        return _trackViewUrl;
+    }else if (_collectionViewUrl){
+        return _collectionViewUrl;
+    }
+    return @"";
+}
 -(NSString *)type{
     NSString *kind;
     if (_kind) {

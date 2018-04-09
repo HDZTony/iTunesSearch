@@ -12,7 +12,7 @@
 @class HDZSearchResult;
 
 @interface HDZResultArray : NSObject<YYModel>
-@property (nonatomic,assign) int resultCount;
+@property (nonatomic,assign) NSInteger resultCount;
 @property (nonatomic, strong) NSArray<HDZSearchResult *>* results;
 @end
 
@@ -34,5 +34,7 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;
-
+@property (nonatomic, strong) NSString *genre;
+@property (nonatomic, assign) double price;
+@property (nonatomic, copy) NSString* storeURL;
 @end

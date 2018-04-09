@@ -10,6 +10,9 @@
 #import "HDZSearchResult.h"
 #import "HDZSearchResultCell.h"
 #import "YYModel.h"
+#import "HDZDetailViewController.h"
+#import "HDZLandscapeViewController.h"
+@protocol UIViewControllerTransitionCoordinator;
 static  NSString *const ksearchResultCell = @"HDZSearchResultCell";
 static  NSString *const knothingFoundCell = @"HDZNothingFoundCell";
 static  NSString *const kloadingCell = @"LoadingCell";
@@ -21,6 +24,7 @@ static  NSString *const kloadingCell = @"LoadingCell";
 @property (nonatomic,assign) BOOL hasSearched;
 @property (nonatomic,assign) BOOL isLoading;
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
+@property (nonatomic, strong) HDZLandscapeViewController *landscapeVC;
 
 @end
 
@@ -41,12 +45,27 @@ static  NSString *const kloadingCell = @"LoadingCell";
     self.tableView.rowHeight = 80;
     [self.searchBar becomeFirstResponder];
 }
+-(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
+    switch (newCollection.verticalSizeClass) {
+        case UIUserInterfaceSizeClassUnspecified:
+            [self hideLandscapeWithCoordinator:coordinator];
+            break;
+        case UIUserInterfaceSizeClassCompact:
+            [self showLandscapeWithCoordinator:coordinator];
+            break;
+        case UIUserInterfaceSizeClassRegular:
+            [self hideLandscapeWithCoordinator:coordinator];
+            break;
+    }
+    
+}
 - (IBAction)segmentChanged:(UISegmentedControl *)sender {
     [self performSearch];
 }
 // MARK:- Private Methods
 -(UIBarPosition)positionForBar:(id<UIBarPositioning>)bar{
-    return UIBarPositionTop;
+    return UIBarPositionTopAttached;
 }
 -(NSURL *)iTunesURLWithSearchText:(NSString *)searchText category:(NSInteger)category{
     NSString *kind;
@@ -84,6 +103,53 @@ static  NSString *const kloadingCell = @"LoadingCell";
 }
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
     [self performSearch];
+}
+-(void)showLandscapeWithCoordinator:(id<UIViewControllerTransitionCoordinator >)coordinator{
+    if (!self.landscapeVC) {
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.landscapeVC = (HDZLandscapeViewController *)[storyBoard instantiateViewControllerWithIdentifier: @"HDZLandscapeViewController"];
+        if (self.landscapeVC) {
+            self.landscapeVC.view.frame = self.view.bounds;
+            self.landscapeVC.view.alpha = 0;
+            [self.view addSubview:self.landscapeVC.view];
+            [self addChildViewController:self.landscapeVC];
+            [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                self.landscapeVC.view.alpha = 1;
+                [self.searchBar resignFirstResponder];
+                if (self.presentedViewController) {
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                }
+            } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+                [self.landscapeVC didMoveToParentViewController:self];
+            }];
+            
+            
+        }
+    }
+}
+-(void)hideLandscapeWithCoordinator:(id<UIViewControllerTransitionCoordinator>) coordinator{
+    if (self.landscapeVC) {
+        [self.landscapeVC willMoveToParentViewController:nil];
+        [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+            self.landscapeVC.view.alpha = 0;
+        } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+            [self.landscapeVC.view removeFromSuperview];
+            [self.landscapeVC removeFromParentViewController];
+            self.landscapeVC = nil;
+        }];
+       
+    };
+}
+
+    
+
+// MARK:- Navigation
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier  isEqual: @"ShowDetail"]) {
+        HDZDetailViewController *detailController = segue.destinationViewController;
+        NSIndexPath *indexPath = sender;
+        detailController.searchResult = self.searchResults[indexPath.row];
+    }
 }
 - (void)performSearch{
     if (self.searchBar.text != nil) {
@@ -125,6 +191,7 @@ static  NSString *const kloadingCell = @"LoadingCell";
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self performSegueWithIdentifier:@"ShowDetail" sender:indexPath];
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if (self.isLoading) {

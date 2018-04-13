@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+//const NSInteger screenWidth = [UIScreen mainScreen].bounds.size.width;
 @interface AppDelegate ()
 
 @end

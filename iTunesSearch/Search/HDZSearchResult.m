@@ -15,6 +15,16 @@
 @end
 
 @implementation HDZSearchResult
+
++(NSDictionary<NSString *,id> *)modelCustomPropertyMapper{
+    return @{@"imageSmall" : @"artworkUrl60",
+             @"imageLarge" : @"artworkUrl100",
+             @"itemGenre" : @"primaryGenreName",
+             @"bookGenre" : @"genres",
+             @"itemPrice" : @"price"
+             };
+}
+
 -(NSString *)name{
     if (_trackName) {
         return _trackName;
@@ -80,14 +90,79 @@
         return @"Unknown";
     }
 }
-+(NSDictionary<NSString *,id> *)modelCustomPropertyMapper{
-    return @{@"imageSmall" : @"artworkUrl60",
-             @"imageLarge" : @"artworkUrl100",
-             @"itemGenre" : @"primaryGenreName",
-             @"bookGenre" : @"genres",
-             @"itemPrice" : @"price"
-             };
+-(NSInteger)imageCount{
+    return _imageCount = arc4random() % 10;
 }
+
+-(CGFloat)collectionViewWidthWithCount:(NSUInteger)count{
+    NSInteger screenWidth = [UIScreen mainScreen].bounds.size.width;
+    //CGFloat width1 = screenWidth * 0.5;
+    CGFloat width2 = (screenWidth - 35) * 0.5;
+    CGFloat widith3 = (screenWidth - 40) / 3;
+    CGFloat width = 0;
+    switch (count) {
+        case 1:
+        case 2:{
+             width = (width2 + 5) * 2;
+        }
+            break;
+        case 3:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:{
+             width = screenWidth - 30;
+        }
+            break;
+        case 4:{
+             width = (widith3 + 5) * 2;
+        }
+            break;
+    }
+    return width;
+}
+-(CGFloat)collectionViewHeightWithCount:(NSUInteger)count{
+    NSInteger screenWidth = [UIScreen mainScreen].bounds.size.width;
+    //CGFloat width1 = screenWidth * 0.5;
+    CGFloat width2 = (screenWidth - 35) * 0.5;
+    CGFloat width3 = (screenWidth - 40) / 3;
+    CGFloat height = 0;
+    switch (count) {
+        case 1:
+        case 2:{
+            height = width2;
+        }
+            break;
+        case 3:{
+            height = width3 + 5;
+        }
+            break;
+        case 4:
+        case 5:
+        case 6:{
+            height = (width3 + 5) * 2;
+        }
+            break;
+        case 7:
+        case 8:
+        case 9:{
+            height = (width3 + 5) * 3;
+        }
+            break;
+            
+    }
+    return height;
+}
+-(CGFloat)attentionCellHeight{
+    // 50 + contentH + 5 + middleViewH + 65
+    CGFloat _attentionCellHeight = 120;
+#warning forget   height += contentH
+    _attentionCellHeight += [self collectionViewHeightWithCount:self.imageCount];
+
+    return _attentionCellHeight;
+}
+
 @end
     
     

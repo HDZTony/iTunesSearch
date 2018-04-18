@@ -7,15 +7,15 @@
 //
 
 #import "AppDelegate.h"
-//const NSInteger screenWidth = [UIScreen mainScreen].bounds.size.width;
-@interface AppDelegate ()
 
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
     [self customizeAppearance];
     return YES;
 }

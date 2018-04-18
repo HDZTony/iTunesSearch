@@ -9,7 +9,6 @@
 
 #import "HDZAttentionViewController.h"
 #import "HDZProductViewController.h"
-
 #import "HDZLifeViewController.h"
 #import "UIView+Frame.h"
 
@@ -26,13 +25,11 @@
 /** 保存所有的标题按钮 */
 @property (nonatomic,strong) NSMutableArray *titleBtns;
 
-
 /**内容视图*/
 @property (nonatomic,strong)UIScrollView * contentScrollow;
 
 /** 下滑线 */
 @property (nonatomic,strong) UIView *lineView;
-
 
 /** 保存上一次点击的按钮 */
 @property (nonatomic,strong) UIButton *preBtn;
@@ -51,9 +48,6 @@
     return _titleBtns;
 }
 
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -64,54 +58,30 @@
    
     
     [self setupTitleView];
-    
-    
     [self customScrollview];
-    
-    
     //添加子控制器
     [self addChildCustomViewController];
-    
-    
-    
-    
-    
     // 默认点击下标为0的标题按钮
     [self titleBtnClick:self.titleBtns[0]];
-
 }
 
 
 
 - (void)setupTitleView{
-    
-    
     UIView * view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCW/2, 40)];
     _view = view;
     _view.backgroundColor = [UIColor redColor];
     self.navigationItem.titleView = view;
-    
     //添加所有的标题按钮
     [self addAllTitleBtns];
-    
-    
     //添加下划线
     [self setupUnderLineView];
-    
-    
-    
-    
-    
 }
-
-
 #pragma mark - 添加下滑线
 - (void)setupUnderLineView
 {
     // 获取下标为0的标题按钮
     UIButton *titleBtn = self.titleBtns[0];
-    
-    
     UIView *lineView = [[UIView alloc] init];
     self.lineView = lineView;
     lineView.backgroundColor = [UIColor greenColor];
@@ -127,12 +97,7 @@
     // 添加到titleView里
     [_view addSubview:lineView];
 }
-
-
-
-
 - (void)customScrollview{
-    
     UIScrollView * contentScrollow = [[UIScrollView alloc]init];
     self.contentScrollow = contentScrollow;
     contentScrollow.frame = CGRectMake(0, 64, SCW, SCH - 64);
@@ -141,15 +106,10 @@
     contentScrollow.pagingEnabled = YES;
     contentScrollow.bounces = NO;
     contentScrollow.showsHorizontalScrollIndicator = NO;
-    
-    
-    
 }
 
 
 - (void)addChildCustomViewController{
-    
-    
     //第一个
     HDZAttentionViewController * fristVc = [[HDZAttentionViewController alloc]init];
     [self addChildViewController:fristVc];
@@ -176,7 +136,7 @@
     
     
     
-    NSArray * titles = @[@"推荐",@"关注"];
+    NSArray * titles = @[@"关注",@"社区"];
     
     CGFloat btnW = _view.bounds.size.width/2;
     CGFloat btnH = _view.bounds.size.height;

@@ -39,7 +39,7 @@ static  NSString *const kloadingCell = @"LoadingCell";
     cell = [UINib nibWithNibName:kloadingCell bundle:nil];
     [self.tableView registerNib:cell forCellReuseIdentifier:kloadingCell];
     self.tableView.rowHeight = 80;
-    [self.searchBar becomeFirstResponder];
+    //[self.searchBar becomeFirstResponder];
 }
 -(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
     [super willTransitionToTraitCollection:newCollection withTransitionCoordinator:coordinator];
@@ -121,7 +121,7 @@ static  NSString *const kloadingCell = @"LoadingCell";
     }
 }
 - (void)performSearch{
-    [self.search performSearchFortext:self.searchBar.text category:self.segmentedControl.selectedSegmentIndex completion:^(BOOL sucess) {
+    [self.search performSearchForText:self.searchBar.text category:self.segmentedControl.selectedSegmentIndex completion:^(BOOL sucess) {
         if (!sucess) {
             [self showNetworkError];
         }

@@ -13,7 +13,7 @@
 @end
 @implementation HDZSearch
 
-- (void)performSearchFortext:(NSString *)text category:(HDZCategory )category completion:(SearchComplete)completion{
+- (void)performSearchForText:(NSString *)text category:(HDZCategory )category completion:(SearchComplete)completion{
     NSLog(@"searching...");
     if (text != nil) {
         [self.dataTask cancel];
@@ -36,7 +36,6 @@
                     success = YES;
                 }
             }
-            NSLog(@"performSearch Failure!%@",response);
             if (!success) {
                 self.hasSearched = NO;
                 self.isLoading = NO;
@@ -69,7 +68,7 @@
             break;
 
     }
-    NSString *urlString = [NSString stringWithFormat:@"https://itunes.apple.com/search?term=%@&limit=20&entity=%@",searchText,kind];
+    NSString *urlString = [NSString stringWithFormat:@"https://itunes.apple.com/search?term=%@&limit=15&entity=%@",searchText,kind];
     NSString *encodedURL = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     NSURL *url = [NSURL URLWithString:encodedURL];
     return url;

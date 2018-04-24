@@ -8,7 +8,7 @@
 
 
 #import "HDZAttentionViewController.h"
-#import "HDZProductViewController.h"
+#import "HDZMallViewController.h"
 #import "HDZLifeViewController.h"
 #import "UIView+Frame.h"
 
@@ -111,14 +111,12 @@
 
 - (void)addChildCustomViewController{
     //第一个
-    HDZAttentionViewController * fristVc = [[HDZAttentionViewController alloc]init];
-    [self addChildViewController:fristVc];
+    HDZAttentionViewController * fristVC = [[HDZAttentionViewController alloc]init];
+    [self addChildViewController:fristVC];
     
     //第二个
-    HDZProductViewController * secondVc = [[HDZProductViewController alloc]init];
-    [self addChildViewController:secondVc];
-    
-    
+    HDZMallViewController *mallVC = [[HDZMallViewController alloc]init];
+    [self addChildViewController:mallVC];
     NSInteger count = self.childViewControllers.count;
     self.contentScrollow.contentSize = CGSizeMake(count * SCW, 0);
     

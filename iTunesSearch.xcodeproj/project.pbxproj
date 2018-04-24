@@ -16,6 +16,13 @@
 		A2647B5720808D2A00B466FE /* HDZProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2647B5620808D2A00B466FE /* HDZProductViewController.m */; };
 		A2647B5A20808E4600B466FE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A2647B5920808E4600B466FE /* UIView+Frame.m */; };
 		A2647B5D20808EA800B466FE /* HDZLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2647B5B20808EA800B466FE /* HDZLifeViewController.m */; };
+		A267C873208C6751000A3C64 /* HDZMallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A267C872208C6751000A3C64 /* HDZMallViewController.m */; };
+		A267C87C208C880E000A3C64 /* HDZGridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A267C87B208C880E000A3C64 /* HDZGridItem.m */; };
+		A267C87F208C8863000A3C64 /* HDZRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A267C87E208C8863000A3C64 /* HDZRecommendItem.m */; };
+		A267C884208C8958000A3C64 /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = A267C881208C8957000A3C64 /* GoodsGrid.plist */; };
+		A267C885208C8958000A3C64 /* CountDownShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = A267C882208C8957000A3C64 /* CountDownShop.plist */; };
+		A267C886208C8958000A3C64 /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = A267C883208C8958000A3C64 /* HomeHighGoods.plist */; };
+		A267C889208CE9F6000A3C64 /* HDZConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = A267C888208CE9F6000A3C64 /* HDZConsts.m */; };
 		A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9EF206D3AD400C413B6 /* AppDelegate.m */; };
 		A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A268D9F2206D3AD400C413B6 /* HDZSearchViewController.m */; };
 		A268D9F6206D3AD400C413B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268D9F4206D3AD400C413B6 /* Main.storyboard */; };
@@ -35,13 +42,24 @@
 		A269DBB6207AFB0D004418A4 /* HDZSlideOutAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A269DBB5207AFB0D004418A4 /* HDZSlideOutAnimationController.m */; };
 		A269DBF7207B273F004418A4 /* HDZSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = A269DBF6207B273F004418A4 /* HDZSearch.m */; };
 		A26CF76B20765E130043395C /* HDZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CF76A20765E130043395C /* HDZGradientView.m */; };
-		A26DD5E82084C3510051B45D /* IDETemplateMacros.plist in Resources */ = {isa = PBXBuildFile; fileRef = A26DD5E72084C3510051B45D /* IDETemplateMacros.plist */; };
 		A26DF1CF2085918F00EEFFA5 /* HDZMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26DF1CE2085918F00EEFFA5 /* HDZMineController.m */; };
 		A26DF1D22085B15700EEFFA5 /* HDZIndividualController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26DF1D12085B15700EEFFA5 /* HDZIndividualController.m */; };
 		A26DF1D52085B19000EEFFA5 /* HDZNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26DF1D42085B19000EEFFA5 /* HDZNameController.m */; };
 		A26DF1D82085B1F900EEFFA5 /* HDZAutographController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26DF1D72085B1F900EEFFA5 /* HDZAutographController.m */; };
 		A26DF1DE2085DDFD00EEFFA5 /* HDZIndividual.m in Sources */ = {isa = PBXBuildFile; fileRef = A26DF1DD2085DDFD00EEFFA5 /* HDZIndividual.m */; };
 		A271FCCC20775A3400AE66EF /* HDZLandscapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A271FCCB20775A3400AE66EF /* HDZLandscapeViewController.m */; };
+		A274BAE7208D69CF0061277B /* HDZGoodsCountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAE6208D69CF0061277B /* HDZGoodsCountDownCell.m */; };
+		A274BAEA208D6A390061277B /* HDZGoodsHandheldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAE9208D6A390061277B /* HDZGoodsHandheldCell.m */; };
+		A274BAED208D6A610061277B /* HDZGoodsYouLikeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAEC208D6A610061277B /* HDZGoodsYouLikeCell.m */; };
+		A274BAF0208D6B3C0061277B /* HDZGoodsGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAEF208D6B3C0061277B /* HDZGoodsGridCell.m */; };
+		A274BAF3208D6B670061277B /* HDZExceedApplianceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAF2208D6B670061277B /* HDZExceedApplianceCell.m */; };
+		A274BAF6208D6B7F0061277B /* HDZNewWelfareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAF5208D6B7F0061277B /* HDZNewWelfareCell.m */; };
+		A274BAF9208D6BC20061277B /* HDZTopLineFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAF8208D6BC20061277B /* HDZTopLineFootView.m */; };
+		A274BAFC208D6BED0061277B /* HDZOverFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAFB208D6BED0061277B /* HDZOverFootView.m */; };
+		A274BAFF208D6C150061277B /* HDZScrollAdFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BAFE208D6C150061277B /* HDZScrollAdFootView.m */; };
+		A274BB02208D6C2E0061277B /* HDZYouLikeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB01208D6C2E0061277B /* HDZYouLikeHeadView.m */; };
+		A274BB05208D6D210061277B /* HDZSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */; };
+		A274BB08208D6D370061277B /* HDZCountDownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB07208D6D370061277B /* HDZCountDownHeadView.m */; };
 		A2843441207C63920051B6A4 /* HDZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2843440207C63920051B6A4 /* HDZMessageViewController.m */; };
 		A2843444207C64F70051B6A4 /* HDZMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2843443207C64F70051B6A4 /* HDZMessageCell.m */; };
 		A288846D207A41CE00657F99 /* HDZBounceAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A288846C207A41CE00657F99 /* HDZBounceAnimationController.m */; };
@@ -49,6 +67,7 @@
 		A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */; };
 		A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */; };
 		A2FC2E522074727F0017D7A6 /* HDZDimmingPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FC2E512074727F0017D7A6 /* HDZDimmingPresentationController.m */; };
+		C4E0D1FA108A38A71A800231 /* libPods-iTunesSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B831C1FE1B7136593781A9 /* libPods-iTunesSearch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +88,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF9CC66F2DD9758DD546A99 /* Pods-iTunesSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.release.xcconfig"; sourceTree = "<group>"; };
+		8E7E5437038780DDA45ADF63 /* Pods-iTunesSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		A211D0E1206E305C0085CEBA /* HDZNothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HDZNothingFoundCell.xib; sourceTree = "<group>"; };
 		A211D0E3206E307F0085CEBA /* HDZSearchResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSearchResultCell.h; sourceTree = "<group>"; };
 		A211D0E4206E307F0085CEBA /* HDZSearchResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearchResultCell.m; sourceTree = "<group>"; };
@@ -86,6 +107,18 @@
 		A2647B5920808E4600B466FE /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		A2647B5B20808EA800B466FE /* HDZLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDZLifeViewController.m; sourceTree = "<group>"; };
 		A2647B5C20808EA800B466FE /* HDZLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDZLifeViewController.h; sourceTree = "<group>"; };
+		A267C871208C6751000A3C64 /* HDZMallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMallViewController.h; sourceTree = "<group>"; };
+		A267C872208C6751000A3C64 /* HDZMallViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZMallViewController.m; sourceTree = "<group>"; };
+		A267C876208C8289000A3C64 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A267C87A208C880E000A3C64 /* HDZGridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGridItem.h; sourceTree = "<group>"; };
+		A267C87B208C880E000A3C64 /* HDZGridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGridItem.m; sourceTree = "<group>"; };
+		A267C87D208C8863000A3C64 /* HDZRecommendItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZRecommendItem.h; sourceTree = "<group>"; };
+		A267C87E208C8863000A3C64 /* HDZRecommendItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZRecommendItem.m; sourceTree = "<group>"; };
+		A267C881208C8957000A3C64 /* GoodsGrid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GoodsGrid.plist; sourceTree = "<group>"; };
+		A267C882208C8957000A3C64 /* CountDownShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountDownShop.plist; sourceTree = "<group>"; };
+		A267C883208C8958000A3C64 /* HomeHighGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomeHighGoods.plist; sourceTree = "<group>"; };
+		A267C887208CE9F6000A3C64 /* HDZConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZConsts.h; sourceTree = "<group>"; };
+		A267C888208CE9F6000A3C64 /* HDZConsts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZConsts.m; sourceTree = "<group>"; };
 		A268D9EB206D3AD400C413B6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268D9EE206D3AD400C413B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A268D9EF206D3AD400C413B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,7 +154,6 @@
 		A269DBF6207B273F004418A4 /* HDZSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSearch.m; sourceTree = "<group>"; };
 		A26CF76920765E130043395C /* HDZGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGradientView.h; sourceTree = "<group>"; };
 		A26CF76A20765E130043395C /* HDZGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGradientView.m; sourceTree = "<group>"; };
-		A26DD5E72084C3510051B45D /* IDETemplateMacros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = IDETemplateMacros.plist; sourceTree = "<group>"; };
 		A26DF1CD2085918F00EEFFA5 /* HDZMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMineController.h; sourceTree = "<group>"; };
 		A26DF1CE2085918F00EEFFA5 /* HDZMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZMineController.m; sourceTree = "<group>"; };
 		A26DF1D02085B15700EEFFA5 /* HDZIndividualController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZIndividualController.h; sourceTree = "<group>"; };
@@ -134,6 +166,30 @@
 		A26DF1DD2085DDFD00EEFFA5 /* HDZIndividual.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZIndividual.m; sourceTree = "<group>"; };
 		A271FCCA20775A3400AE66EF /* HDZLandscapeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZLandscapeViewController.h; sourceTree = "<group>"; };
 		A271FCCB20775A3400AE66EF /* HDZLandscapeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZLandscapeViewController.m; sourceTree = "<group>"; };
+		A274BAE5208D69CF0061277B /* HDZGoodsCountDownCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodsCountDownCell.h; sourceTree = "<group>"; };
+		A274BAE6208D69CF0061277B /* HDZGoodsCountDownCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodsCountDownCell.m; sourceTree = "<group>"; };
+		A274BAE8208D6A390061277B /* HDZGoodsHandheldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodsHandheldCell.h; sourceTree = "<group>"; };
+		A274BAE9208D6A390061277B /* HDZGoodsHandheldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodsHandheldCell.m; sourceTree = "<group>"; };
+		A274BAEB208D6A610061277B /* HDZGoodsYouLikeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodsYouLikeCell.h; sourceTree = "<group>"; };
+		A274BAEC208D6A610061277B /* HDZGoodsYouLikeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodsYouLikeCell.m; sourceTree = "<group>"; };
+		A274BAEE208D6B3C0061277B /* HDZGoodsGridCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodsGridCell.h; sourceTree = "<group>"; };
+		A274BAEF208D6B3C0061277B /* HDZGoodsGridCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodsGridCell.m; sourceTree = "<group>"; };
+		A274BAF1208D6B670061277B /* HDZExceedApplianceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZExceedApplianceCell.h; sourceTree = "<group>"; };
+		A274BAF2208D6B670061277B /* HDZExceedApplianceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZExceedApplianceCell.m; sourceTree = "<group>"; };
+		A274BAF4208D6B7F0061277B /* HDZNewWelfareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZNewWelfareCell.h; sourceTree = "<group>"; };
+		A274BAF5208D6B7F0061277B /* HDZNewWelfareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZNewWelfareCell.m; sourceTree = "<group>"; };
+		A274BAF7208D6BC20061277B /* HDZTopLineFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZTopLineFootView.h; sourceTree = "<group>"; };
+		A274BAF8208D6BC20061277B /* HDZTopLineFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZTopLineFootView.m; sourceTree = "<group>"; };
+		A274BAFA208D6BED0061277B /* HDZOverFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZOverFootView.h; sourceTree = "<group>"; };
+		A274BAFB208D6BED0061277B /* HDZOverFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZOverFootView.m; sourceTree = "<group>"; };
+		A274BAFD208D6C150061277B /* HDZScrollAdFootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZScrollAdFootView.h; sourceTree = "<group>"; };
+		A274BAFE208D6C150061277B /* HDZScrollAdFootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZScrollAdFootView.m; sourceTree = "<group>"; };
+		A274BB00208D6C2E0061277B /* HDZYouLikeHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZYouLikeHeadView.h; sourceTree = "<group>"; };
+		A274BB01208D6C2E0061277B /* HDZYouLikeHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZYouLikeHeadView.m; sourceTree = "<group>"; };
+		A274BB03208D6D210061277B /* HDZSlideshowHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSlideshowHeadView.h; sourceTree = "<group>"; };
+		A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSlideshowHeadView.m; sourceTree = "<group>"; };
+		A274BB06208D6D370061277B /* HDZCountDownHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZCountDownHeadView.h; sourceTree = "<group>"; };
+		A274BB07208D6D370061277B /* HDZCountDownHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZCountDownHeadView.m; sourceTree = "<group>"; };
 		A284343F207C63920051B6A4 /* HDZMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMessageViewController.h; sourceTree = "<group>"; };
 		A2843440207C63920051B6A4 /* HDZMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZMessageViewController.m; sourceTree = "<group>"; };
 		A2843442207C64F70051B6A4 /* HDZMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMessageCell.h; sourceTree = "<group>"; };
@@ -147,6 +203,7 @@
 		A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		A2FC2E502074727F0017D7A6 /* HDZDimmingPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZDimmingPresentationController.h; sourceTree = "<group>"; };
 		A2FC2E512074727F0017D7A6 /* HDZDimmingPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZDimmingPresentationController.m; sourceTree = "<group>"; };
+		A9B831C1FE1B7136593781A9 /* libPods-iTunesSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iTunesSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E0D1FA108A38A71A800231 /* libPods-iTunesSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +232,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1942FA176C38DD3C6CED7D1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B831C1FE1B7136593781A9 /* libPods-iTunesSearch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A24E9B53207137360060CF92 /* YYModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +287,7 @@
 		A266AA96207BBD30009F72D6 /* life */ = {
 			isa = PBXGroup;
 			children = (
+				A267C870208C65B5000A3C64 /* 商城 */,
 				A2697C302081D78100210F6D /* Attention */,
 				A2647B5C20808EA800B466FE /* HDZLifeViewController.h */,
 				A2647B5B20808EA800B466FE /* HDZLifeViewController.m */,
@@ -230,6 +297,77 @@
 			path = life;
 			sourceTree = "<group>";
 		};
+		A267C870208C65B5000A3C64 /* 商城 */ = {
+			isa = PBXGroup;
+			children = (
+				A267C879208C86E0000A3C64 /* Model */,
+				A267C878208C83DB000A3C64 /* View */,
+				A267C877208C83CA000A3C64 /* ViewController */,
+			);
+			path = "商城";
+			sourceTree = "<group>";
+		};
+		A267C877208C83CA000A3C64 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A267C871208C6751000A3C64 /* HDZMallViewController.h */,
+				A267C872208C6751000A3C64 /* HDZMallViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A267C878208C83DB000A3C64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A274BAE5208D69CF0061277B /* HDZGoodsCountDownCell.h */,
+				A274BAE6208D69CF0061277B /* HDZGoodsCountDownCell.m */,
+				A274BAE8208D6A390061277B /* HDZGoodsHandheldCell.h */,
+				A274BAE9208D6A390061277B /* HDZGoodsHandheldCell.m */,
+				A274BAEB208D6A610061277B /* HDZGoodsYouLikeCell.h */,
+				A274BAEC208D6A610061277B /* HDZGoodsYouLikeCell.m */,
+				A274BAEE208D6B3C0061277B /* HDZGoodsGridCell.h */,
+				A274BAEF208D6B3C0061277B /* HDZGoodsGridCell.m */,
+				A274BAF1208D6B670061277B /* HDZExceedApplianceCell.h */,
+				A274BAF2208D6B670061277B /* HDZExceedApplianceCell.m */,
+				A274BAF4208D6B7F0061277B /* HDZNewWelfareCell.h */,
+				A274BAF5208D6B7F0061277B /* HDZNewWelfareCell.m */,
+				A274BAF7208D6BC20061277B /* HDZTopLineFootView.h */,
+				A274BAF8208D6BC20061277B /* HDZTopLineFootView.m */,
+				A274BAFA208D6BED0061277B /* HDZOverFootView.h */,
+				A274BAFB208D6BED0061277B /* HDZOverFootView.m */,
+				A274BAFD208D6C150061277B /* HDZScrollAdFootView.h */,
+				A274BAFE208D6C150061277B /* HDZScrollAdFootView.m */,
+				A274BB00208D6C2E0061277B /* HDZYouLikeHeadView.h */,
+				A274BB01208D6C2E0061277B /* HDZYouLikeHeadView.m */,
+				A274BB03208D6D210061277B /* HDZSlideshowHeadView.h */,
+				A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */,
+				A274BB06208D6D370061277B /* HDZCountDownHeadView.h */,
+				A274BB07208D6D370061277B /* HDZCountDownHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A267C879208C86E0000A3C64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A267C87A208C880E000A3C64 /* HDZGridItem.h */,
+				A267C87B208C880E000A3C64 /* HDZGridItem.m */,
+				A267C87D208C8863000A3C64 /* HDZRecommendItem.h */,
+				A267C87E208C8863000A3C64 /* HDZRecommendItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A267C880208C893D000A3C64 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A267C882208C8957000A3C64 /* CountDownShop.plist */,
+				A267C881208C8957000A3C64 /* GoodsGrid.plist */,
+				A267C883208C8958000A3C64 /* HomeHighGoods.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		A268D9E2206D3AD400C413B6 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +375,8 @@
 				A268DA06206D3AD400C413B6 /* iTunesSearchTests */,
 				A268DA11206D3AD400C413B6 /* iTunesSearchUITests */,
 				A268D9EC206D3AD400C413B6 /* Products */,
+				DB583CE3627DE9152DF433E6 /* Pods */,
+				1942FA176C38DD3C6CED7D1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 0;
@@ -254,6 +394,7 @@
 		A268D9ED206D3AD400C413B6 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				A267C880208C893D000A3C64 /* Resource */,
 				A24E9B53207137360060CF92 /* YYModel */,
 				A266AA95207BBD05009F72D6 /* Search */,
 				A266AA96207BBD30009F72D6 /* life */,
@@ -266,9 +407,11 @@
 				A268D9F9206D3AD400C413B6 /* LaunchScreen.storyboard */,
 				A268D9FC206D3AD400C413B6 /* Info.plist */,
 				A268D9FD206D3AD400C413B6 /* main.m */,
+				A267C876208C8289000A3C64 /* PrefixHeader.pch */,
+				A267C887208CE9F6000A3C64 /* HDZConsts.h */,
+				A267C888208CE9F6000A3C64 /* HDZConsts.m */,
 				A2647B5820808E4600B466FE /* UIView+Frame.h */,
 				A2647B5920808E4600B466FE /* UIView+Frame.m */,
-				A26DD5E72084C3510051B45D /* IDETemplateMacros.plist */,
 			);
 			path = iTunesSearch;
 			sourceTree = "<group>";
@@ -387,6 +530,15 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		DB583CE3627DE9152DF433E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E7E5437038780DDA45ADF63 /* Pods-iTunesSearch.debug.xcconfig */,
+				1DF9CC66F2DD9758DD546A99 /* Pods-iTunesSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,9 +546,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A268DA17206D3AD400C413B6 /* Build configuration list for PBXNativeTarget "iTunesSearch" */;
 			buildPhases = (
+				4BAB574728302F3A30ECF1D9 /* [CP] Check Pods Manifest.lock */,
 				A268D9E7206D3AD400C413B6 /* Sources */,
 				A268D9E8206D3AD400C413B6 /* Frameworks */,
 				A268D9E9206D3AD400C413B6 /* Resources */,
+				E5AC76278D79F182627A050A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -495,8 +649,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A268D9FB206D3AD400C413B6 /* LaunchScreen.storyboard in Resources */,
+				A267C885208C8958000A3C64 /* CountDownShop.plist in Resources */,
+				A267C886208C8958000A3C64 /* HomeHighGoods.plist in Resources */,
+				A267C884208C8958000A3C64 /* GoodsGrid.plist in Resources */,
 				A2698C68208310490059FB22 /* HDZImageCollectionView.xib in Resources */,
-				A26DD5E82084C3510051B45D /* IDETemplateMacros.plist in Resources */,
 				A211D0E2206E305C0085CEBA /* HDZNothingFoundCell.xib in Resources */,
 				A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */,
 				A268D9F8206D3AD400C413B6 /* Assets.xcassets in Resources */,
@@ -523,6 +679,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BAB574728302F3A30ECF1D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunesSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5AC76278D79F182627A050A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A268D9E7206D3AD400C413B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -530,7 +725,11 @@
 			files = (
 				A288846D207A41CE00657F99 /* HDZBounceAnimationController.m in Sources */,
 				A26DF1D22085B15700EEFFA5 /* HDZIndividualController.m in Sources */,
+				A274BAF3208D6B670061277B /* HDZExceedApplianceCell.m in Sources */,
 				A2FC2E522074727F0017D7A6 /* HDZDimmingPresentationController.m in Sources */,
+				A274BAF9208D6BC20061277B /* HDZTopLineFootView.m in Sources */,
+				A274BAEA208D6A390061277B /* HDZGoodsHandheldCell.m in Sources */,
+				A267C87C208C880E000A3C64 /* HDZGridItem.m in Sources */,
 				A26DF1D82085B1F900EEFFA5 /* HDZAutographController.m in Sources */,
 				A2843444207C64F70051B6A4 /* HDZMessageCell.m in Sources */,
 				A2647B5A20808E4600B466FE /* UIView+Frame.m in Sources */,
@@ -538,8 +737,13 @@
 				A269DBB6207AFB0D004418A4 /* HDZSlideOutAnimationController.m in Sources */,
 				A2AC7BB02073BF3700C04707 /* HDZDetailViewController.m in Sources */,
 				A2698C6F20831DC70059FB22 /* HDZImageCollectionCell.m in Sources */,
+				A274BAED208D6A610061277B /* HDZGoodsYouLikeCell.m in Sources */,
+				A274BB05208D6D210061277B /* HDZSlideshowHeadView.m in Sources */,
+				A274BAFC208D6BED0061277B /* HDZOverFootView.m in Sources */,
 				A269DBF7207B273F004418A4 /* HDZSearch.m in Sources */,
 				A2698C6B2083187C0059FB22 /* HDZImageCollectionLayout.m in Sources */,
+				A274BAFF208D6C150061277B /* HDZScrollAdFootView.m in Sources */,
+				A274BAE7208D69CF0061277B /* HDZGoodsCountDownCell.m in Sources */,
 				A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */,
 				A271FCCC20775A3400AE66EF /* HDZLandscapeViewController.m in Sources */,
 				A26DF1D52085B19000EEFFA5 /* HDZNameController.m in Sources */,
@@ -547,15 +751,22 @@
 				A268D9FE206D3AD400C413B6 /* main.m in Sources */,
 				A2647B5420808CAC00B466FE /* HDZAttentionViewController.m in Sources */,
 				A2697C2E2081C76E00210F6D /* HDZAttentionCell.m in Sources */,
+				A267C889208CE9F6000A3C64 /* HDZConsts.m in Sources */,
 				A2647B5D20808EA800B466FE /* HDZLifeViewController.m in Sources */,
 				A24E9B59207137360060CF92 /* NSObject+YYModel.m in Sources */,
 				A211D0E6206E307F0085CEBA /* HDZSearchResultCell.m in Sources */,
+				A274BAF6208D6B7F0061277B /* HDZNewWelfareCell.m in Sources */,
 				A26CF76B20765E130043395C /* HDZGradientView.m in Sources */,
 				A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
 				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
+				A274BAF0208D6B3C0061277B /* HDZGoodsGridCell.m in Sources */,
 				A2843441207C63920051B6A4 /* HDZMessageViewController.m in Sources */,
+				A267C873208C6751000A3C64 /* HDZMallViewController.m in Sources */,
 				A2698C66208310280059FB22 /* HDZImageCollectionView.m in Sources */,
+				A274BB02208D6C2E0061277B /* HDZYouLikeHeadView.m in Sources */,
+				A267C87F208C8863000A3C64 /* HDZRecommendItem.m in Sources */,
+				A274BB08208D6D370061277B /* HDZCountDownHeadView.m in Sources */,
 				A26DF1CF2085918F00EEFFA5 /* HDZMineController.m in Sources */,
 				A26DF1DE2085DDFD00EEFFA5 /* HDZIndividual.m in Sources */,
 			);
@@ -722,10 +933,13 @@
 		};
 		A268DA18206D3AD400C413B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7E5437038780DDA45ADF63 /* Pods-iTunesSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WH73Q766U;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = iTunesSearch/PrefixHeader.pch;
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.iTunesSearch;
@@ -736,10 +950,13 @@
 		};
 		A268DA19206D3AD400C413B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF9CC66F2DD9758DD546A99 /* Pods-iTunesSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7WH73Q766U;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = iTunesSearch/PrefixHeader.pch;
 				INFOPLIST_FILE = iTunesSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.iTunesSearch;

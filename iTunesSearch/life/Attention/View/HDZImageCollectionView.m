@@ -46,13 +46,13 @@
         case 1:
         {   size = CGSizeMake(screenWidth-30, screenWidth-30);}
             break;
-        case 2|4:
+        case 2: case 4:
         {
             CGFloat iamgeWidth = (screenWidth-35)*0.5;
             size = CGSizeMake(iamgeWidth, iamgeWidth);
         }
             break;
-        case 3|5|6|7|8|9:
+        case 3: case 5: case 6: case 7: case 8: case 9:
         {
             CGFloat iamgeWidth = (screenWidth - 40) / 3;
             size = CGSizeMake(iamgeWidth, iamgeWidth);

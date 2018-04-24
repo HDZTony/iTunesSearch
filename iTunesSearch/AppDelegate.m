@@ -51,6 +51,7 @@
     UIColor *barTintColor = [[UIColor alloc]initWithRed:20/255 green:160/255 blue:160/255 alpha:1];
     [UISearchBar appearance].barTintColor = barTintColor;
     self.window.tintColor = [[UIColor alloc]initWithRed:10/255 green:80/255 blue:80/255 alpha:1];
+    
 }
 
 @end

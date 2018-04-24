@@ -769,6 +769,8 @@
                     <connections>
                         <outlet property="autographLabel" destination="TCU-PX-2EZ" id="nAC-OC-qZ2"/>
                         <outlet property="birthdayLabel" destination="YkZ-KW-QT7" id="bQF-I3-3iG"/>
+                        <outlet property="birthdayPicker" destination="pRe-9F-qgm" id="79M-zD-Xtc"/>
+                        <outlet property="birthdayPickerCell" destination="Jo7-0a-CHJ" id="rYU-ff-t7I"/>
                         <outlet property="genderLabel" destination="wBp-hV-SKD" id="xb3-bz-li6"/>
                         <outlet property="locationLabel" destination="ByX-Of-bzD" id="8p2-iK-YkB"/>
                         <outlet property="nameLabel" destination="YUc-yz-dem" id="lIf-2m-BP4"/>
@@ -776,6 +778,26 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XSm-sC-H3K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="Jo7-0a-CHJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jo7-0a-CHJ" id="NLD-f1-bjH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="216.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-9F-qgm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="545727442.20492494">
+                                    <!--2018-04-18 06:57:22 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="dateChange:" destination="Y3T-VU-2VL" eventType="valueChanged" id="3W6-br-fwP"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                    </tableViewCellContentView>
+                </tableViewCell>
             </objects>
             <point key="canvasLocation" x="3078.75" y="1779.9295774647887"/>
         </scene>

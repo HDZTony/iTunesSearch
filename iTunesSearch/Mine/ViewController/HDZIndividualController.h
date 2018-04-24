@@ -15,5 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *birthdayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *autographLabel;
+@property (weak, nonatomic) IBOutlet UIDatePicker *birthdayPicker;
+@property (strong, nonatomic) IBOutlet UITableViewCell *birthdayPickerCell;
+
 @property (nonatomic, strong)HDZIndividual *individual;
 @end

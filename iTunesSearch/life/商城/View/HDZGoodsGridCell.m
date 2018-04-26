@@ -27,16 +27,16 @@
 - (void)setGridItem:(HDZGridItem *)gridItem
 {
     _gridItem = gridItem;
-    
-    NSLog(@"--%@--",_gridItem);
     //_gridLabel.text = gridItem.gridTitle;有问题
+    /*Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[__NSCFDictionary gridTitle]: unrecognized selector sent to instance 0x1c4a76ec0'
+     *** First throw call stack:
+     (0x1829dad8c 0x181b945ec 0x1829e8098 0x1829e05c8 0x1828c641c 0x100e8712c 0x100e8a4f0 0x18c701fb8 0x18c6e7454 0x18c6e0790 0x18c5af770 0x186b5125c 0x186b553ec 0x186ac1aa0 0x186ae95d0 0x186aea450 0x182982910 0x182980238 0x182980884 0x1828a0da8 0x184883020 0x18c88178c 0x100e6ae54 0x182331fc0)
+     libc++abi.dylib: terminating with uncaught exception of type NSException*/
     _gridLabel.text = gridItem.gridTitle;
     _tagLabel.text = gridItem.gridTag;
-    
     _tagLabel.hidden = (gridItem.gridTag.length == 0) ? YES : NO;
     _tagLabel.textColor = [UIColor hdz_colorWithHexString:gridItem.gridColor];
     [HDZSpeedy hdz_changeControlCircularWith:_tagLabel AndSetCornerRadius:5 SetBorderWidth:1 SetBorderColor:_tagLabel.textColor canMasksToBounds:YES];
-    
     if (_gridItem.iconImage.length == 0) return;
     if ([[_gridItem.iconImage substringToIndex:4] isEqualToString:@"http"]) {
         [_gridImageView sd_setImageWithURL:[NSURL URLWithString:gridItem.iconImage]placeholderImage:[UIImage imageNamed:@"default_49_11"]];

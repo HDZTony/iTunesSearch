@@ -60,9 +60,11 @@
 		A274BB02208D6C2E0061277B /* HDZYouLikeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB01208D6C2E0061277B /* HDZYouLikeHeadView.m */; };
 		A274BB05208D6D210061277B /* HDZSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */; };
 		A274BB08208D6D370061277B /* HDZCountDownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB07208D6D370061277B /* HDZCountDownHeadView.m */; };
+		A28335792091F42100343F80 /* HDZSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28335782091F42100343F80 /* HDZSpeedy.m */; };
 		A2843441207C63920051B6A4 /* HDZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2843440207C63920051B6A4 /* HDZMessageViewController.m */; };
 		A2843444207C64F70051B6A4 /* HDZMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2843443207C64F70051B6A4 /* HDZMessageCell.m */; };
 		A288846D207A41CE00657F99 /* HDZBounceAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A288846C207A41CE00657F99 /* HDZBounceAnimationController.m */; };
+		A29BB559208F27E000ADECA9 /* UIColor+HDZColorTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = A29BB558208F27E000ADECA9 /* UIColor+HDZColorTranslation.m */; };
 		A2AC7BB02073BF3700C04707 /* HDZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC7BAF2073BF3700C04707 /* HDZDetailViewController.m */; };
 		A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */; };
 		A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */; };
@@ -190,12 +192,16 @@
 		A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSlideshowHeadView.m; sourceTree = "<group>"; };
 		A274BB06208D6D370061277B /* HDZCountDownHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZCountDownHeadView.h; sourceTree = "<group>"; };
 		A274BB07208D6D370061277B /* HDZCountDownHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZCountDownHeadView.m; sourceTree = "<group>"; };
+		A28335772091F42100343F80 /* HDZSpeedy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSpeedy.h; sourceTree = "<group>"; };
+		A28335782091F42100343F80 /* HDZSpeedy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSpeedy.m; sourceTree = "<group>"; };
 		A284343F207C63920051B6A4 /* HDZMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMessageViewController.h; sourceTree = "<group>"; };
 		A2843440207C63920051B6A4 /* HDZMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZMessageViewController.m; sourceTree = "<group>"; };
 		A2843442207C64F70051B6A4 /* HDZMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMessageCell.h; sourceTree = "<group>"; };
 		A2843443207C64F70051B6A4 /* HDZMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZMessageCell.m; sourceTree = "<group>"; };
 		A288846B207A41CE00657F99 /* HDZBounceAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZBounceAnimationController.h; sourceTree = "<group>"; };
 		A288846C207A41CE00657F99 /* HDZBounceAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZBounceAnimationController.m; sourceTree = "<group>"; };
+		A29BB557208F27E000ADECA9 /* UIColor+HDZColorTranslation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HDZColorTranslation.h"; sourceTree = "<group>"; };
+		A29BB558208F27E000ADECA9 /* UIColor+HDZColorTranslation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HDZColorTranslation.m"; sourceTree = "<group>"; };
 		A2AC7BAE2073BF3700C04707 /* HDZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZDetailViewController.h; sourceTree = "<group>"; };
 		A2AC7BAF2073BF3700C04707 /* HDZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZDetailViewController.m; sourceTree = "<group>"; };
 		A2C1CEE42073297F008662FB /* UIImageView+HDZDownloadImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HDZDownloadImage.h"; sourceTree = "<group>"; };
@@ -394,6 +400,7 @@
 		A268D9ED206D3AD400C413B6 /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				A28335752091F3F500343F80 /* Expand */,
 				A267C880208C893D000A3C64 /* Resource */,
 				A24E9B53207137360060CF92 /* YYModel */,
 				A266AA95207BBD05009F72D6 /* Search */,
@@ -412,6 +419,8 @@
 				A267C888208CE9F6000A3C64 /* HDZConsts.m */,
 				A2647B5820808E4600B466FE /* UIView+Frame.h */,
 				A2647B5920808E4600B466FE /* UIView+Frame.m */,
+				A29BB557208F27E000ADECA9 /* UIColor+HDZColorTranslation.h */,
+				A29BB558208F27E000ADECA9 /* UIColor+HDZColorTranslation.m */,
 			);
 			path = iTunesSearch;
 			sourceTree = "<group>";
@@ -519,6 +528,23 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A28335752091F3F500343F80 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				A28335762091F40800343F80 /* Tools */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		A28335762091F40800343F80 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A28335772091F42100343F80 /* HDZSpeedy.h */,
+				A28335782091F42100343F80 /* HDZSpeedy.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		A284343E207C635C0051B6A4 /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +577,7 @@
 				A268D9E8206D3AD400C413B6 /* Frameworks */,
 				A268D9E9206D3AD400C413B6 /* Resources */,
 				E5AC76278D79F182627A050A /* [CP] Copy Pods Resources */,
+				89FABA86ADD1CA94A62D0F8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -698,6 +725,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		89FABA86ADD1CA94A62D0F8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-frameworks.sh",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-14/iOS/RevealServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunesSearch/Pods-iTunesSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E5AC76278D79F182627A050A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -745,6 +790,7 @@
 				A274BAFF208D6C150061277B /* HDZScrollAdFootView.m in Sources */,
 				A274BAE7208D69CF0061277B /* HDZGoodsCountDownCell.m in Sources */,
 				A268D9F3206D3AD400C413B6 /* HDZSearchViewController.m in Sources */,
+				A28335792091F42100343F80 /* HDZSpeedy.m in Sources */,
 				A271FCCC20775A3400AE66EF /* HDZLandscapeViewController.m in Sources */,
 				A26DF1D52085B19000EEFFA5 /* HDZNameController.m in Sources */,
 				A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */,
@@ -755,6 +801,7 @@
 				A2647B5D20808EA800B466FE /* HDZLifeViewController.m in Sources */,
 				A24E9B59207137360060CF92 /* NSObject+YYModel.m in Sources */,
 				A211D0E6206E307F0085CEBA /* HDZSearchResultCell.m in Sources */,
+				A29BB559208F27E000ADECA9 /* UIColor+HDZColorTranslation.m in Sources */,
 				A274BAF6208D6B7F0061277B /* HDZNewWelfareCell.m in Sources */,
 				A26CF76B20765E130043395C /* HDZGradientView.m in Sources */,
 				A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */,

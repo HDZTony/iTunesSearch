@@ -91,12 +91,11 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
 //按钮没有实现
 - (void)setUpScrollToTopView{
     _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:_backTopButton];
     [_backTopButton addTarget:self action:@selector(scrollToTop) forControlEvents:UIControlEventTouchUpInside];
     [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
     _backTopButton.hidden = YES;
     _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 110, 40, 40);
-    [self.view addSubview:_backTopButton];
-    
 }
 - (void)scrollToTop{
     [self.collectionView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
@@ -107,7 +106,8 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
     switch (indexPath.section) {
         case 0:{
             HDZGoodsGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HDZGoodsGridCellID forIndexPath:indexPath];
-            cell.backgroundColor = HDZRandomColor;
+            cell.gridItem = _gridItem[indexPath.row];
+            cell.backgroundColor = [UIColor whiteColor];
             gridCell = cell;
         }
             break;

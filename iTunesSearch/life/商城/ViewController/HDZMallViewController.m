@@ -82,10 +82,19 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
 - (void)setUpGoodsData{
     NSString *path = [[NSBundle mainBundle] pathForResource:@"GoodsGrid" ofType:@"plist"];
     NSMutableArray *goodsGrid = [NSMutableArray arrayWithContentsOfFile:path];
-    self.gridItem = goodsGrid;
+    self.gridItem = [NSMutableArray array];
+    for (NSDictionary *dict in goodsGrid) {
+        HDZGridItem *item = [[HDZGridItem alloc] initWithDict:dict];
+        [self.gridItem addObject:item];
+    }
+    self.youLikeItem = [NSMutableArray array];
     path = [[NSBundle mainBundle] pathForResource:@"HomeHighGoods" ofType:@"plist"];
     NSMutableArray *youLikeItem = [NSMutableArray arrayWithContentsOfFile:path];
-    self.youLikeItem = youLikeItem;
+    for (NSDictionary *dict in youLikeItem) {
+        HDZRecommendItem *item = [[HDZRecommendItem alloc] initWithDict:dict];
+        [self.youLikeItem addObject:item];
+    }
+    
 }
 //Status bar could not find cached time string image. Rendering in-process.
 //按钮没有实现

@@ -9,5 +9,11 @@
 #import "HDZGridItem.h"
 
 @implementation HDZGridItem
-
+- (instancetype)initWithDict:(NSDictionary *)dict{
+    self = [super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
 @end

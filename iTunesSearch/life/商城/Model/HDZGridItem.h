@@ -17,4 +17,6 @@
 @property (nonatomic, copy ,readonly) NSString *gridTag;
 /** tag颜色  */
 @property (nonatomic, copy ,readonly) NSString *gridColor;
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
 @end

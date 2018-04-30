@@ -9,5 +9,11 @@
 #import "HDZRecommendItem.h"
 
 @implementation HDZRecommendItem
-
+- (instancetype)initWithDict:(NSDictionary *)dict{
+    self = [super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:dict];
+    }
+    return self;
+}
 @end

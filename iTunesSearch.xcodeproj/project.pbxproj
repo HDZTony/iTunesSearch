@@ -60,12 +60,16 @@
 		A274BB02208D6C2E0061277B /* HDZYouLikeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB01208D6C2E0061277B /* HDZYouLikeHeadView.m */; };
 		A274BB05208D6D210061277B /* HDZSlideshowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */; };
 		A274BB08208D6D370061277B /* HDZCountDownHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A274BB07208D6D370061277B /* HDZCountDownHeadView.m */; };
+		A277A42E20998B870002915E /* DCTitleRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = A277A42B20998B870002915E /* DCTitleRolling.m */; };
+		A277A42F20998B870002915E /* UIView+DCRolling.m in Sources */ = {isa = PBXBuildFile; fileRef = A277A42D20998B870002915E /* UIView+DCRolling.m */; };
+		A277A4322099B42B0002915E /* HDZGoodsSurplusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A277A4312099B42B0002915E /* HDZGoodsSurplusCell.m */; };
 		A28335792091F42100343F80 /* HDZSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = A28335782091F42100343F80 /* HDZSpeedy.m */; };
 		A2843441207C63920051B6A4 /* HDZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2843440207C63920051B6A4 /* HDZMessageViewController.m */; };
 		A2843444207C64F70051B6A4 /* HDZMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2843443207C64F70051B6A4 /* HDZMessageCell.m */; };
 		A288846D207A41CE00657F99 /* HDZBounceAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A288846C207A41CE00657F99 /* HDZBounceAnimationController.m */; };
 		A29BB559208F27E000ADECA9 /* UIColor+HDZColorTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = A29BB558208F27E000ADECA9 /* UIColor+HDZColorTranslation.m */; };
 		A2AC7BB02073BF3700C04707 /* HDZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC7BAF2073BF3700C04707 /* HDZDetailViewController.m */; };
+		A2B9798320976D1B008328FC /* HDZNewWelfareLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B9798220976D1B008328FC /* HDZNewWelfareLayout.m */; };
 		A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */; };
 		A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */; };
 		A2FC2E522074727F0017D7A6 /* HDZDimmingPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FC2E512074727F0017D7A6 /* HDZDimmingPresentationController.m */; };
@@ -192,6 +196,12 @@
 		A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSlideshowHeadView.m; sourceTree = "<group>"; };
 		A274BB06208D6D370061277B /* HDZCountDownHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZCountDownHeadView.h; sourceTree = "<group>"; };
 		A274BB07208D6D370061277B /* HDZCountDownHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZCountDownHeadView.m; sourceTree = "<group>"; };
+		A277A42A20998B870002915E /* DCTitleRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTitleRolling.h; sourceTree = "<group>"; };
+		A277A42B20998B870002915E /* DCTitleRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTitleRolling.m; sourceTree = "<group>"; };
+		A277A42C20998B870002915E /* UIView+DCRolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DCRolling.h"; sourceTree = "<group>"; };
+		A277A42D20998B870002915E /* UIView+DCRolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCRolling.m"; sourceTree = "<group>"; };
+		A277A4302099B42B0002915E /* HDZGoodsSurplusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodsSurplusCell.h; sourceTree = "<group>"; };
+		A277A4312099B42B0002915E /* HDZGoodsSurplusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodsSurplusCell.m; sourceTree = "<group>"; };
 		A28335772091F42100343F80 /* HDZSpeedy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZSpeedy.h; sourceTree = "<group>"; };
 		A28335782091F42100343F80 /* HDZSpeedy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZSpeedy.m; sourceTree = "<group>"; };
 		A284343F207C63920051B6A4 /* HDZMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZMessageViewController.h; sourceTree = "<group>"; };
@@ -204,6 +214,8 @@
 		A29BB558208F27E000ADECA9 /* UIColor+HDZColorTranslation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HDZColorTranslation.m"; sourceTree = "<group>"; };
 		A2AC7BAE2073BF3700C04707 /* HDZDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZDetailViewController.h; sourceTree = "<group>"; };
 		A2AC7BAF2073BF3700C04707 /* HDZDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZDetailViewController.m; sourceTree = "<group>"; };
+		A2B9798120976D1B008328FC /* HDZNewWelfareLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZNewWelfareLayout.h; sourceTree = "<group>"; };
+		A2B9798220976D1B008328FC /* HDZNewWelfareLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZNewWelfareLayout.m; sourceTree = "<group>"; };
 		A2C1CEE42073297F008662FB /* UIImageView+HDZDownloadImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HDZDownloadImage.h"; sourceTree = "<group>"; };
 		A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HDZDownloadImage.m"; sourceTree = "<group>"; };
 		A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
@@ -349,6 +361,10 @@
 				A274BB04208D6D210061277B /* HDZSlideshowHeadView.m */,
 				A274BB06208D6D370061277B /* HDZCountDownHeadView.h */,
 				A274BB07208D6D370061277B /* HDZCountDownHeadView.m */,
+				A2B9798120976D1B008328FC /* HDZNewWelfareLayout.h */,
+				A2B9798220976D1B008328FC /* HDZNewWelfareLayout.m */,
+				A277A4302099B42B0002915E /* HDZGoodsSurplusCell.h */,
+				A277A4312099B42B0002915E /* HDZGoodsSurplusCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -528,9 +544,21 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A277A42920998B870002915E /* CDDTitleRolling */ = {
+			isa = PBXGroup;
+			children = (
+				A277A42A20998B870002915E /* DCTitleRolling.h */,
+				A277A42B20998B870002915E /* DCTitleRolling.m */,
+				A277A42C20998B870002915E /* UIView+DCRolling.h */,
+				A277A42D20998B870002915E /* UIView+DCRolling.m */,
+			);
+			path = CDDTitleRolling;
+			sourceTree = "<group>";
+		};
 		A28335752091F3F500343F80 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				A277A42920998B870002915E /* CDDTitleRolling */,
 				A28335762091F40800343F80 /* Tools */,
 			);
 			path = Expand;
@@ -772,6 +800,7 @@
 				A26DF1D22085B15700EEFFA5 /* HDZIndividualController.m in Sources */,
 				A274BAF3208D6B670061277B /* HDZExceedApplianceCell.m in Sources */,
 				A2FC2E522074727F0017D7A6 /* HDZDimmingPresentationController.m in Sources */,
+				A277A42F20998B870002915E /* UIView+DCRolling.m in Sources */,
 				A274BAF9208D6BC20061277B /* HDZTopLineFootView.m in Sources */,
 				A274BAEA208D6A390061277B /* HDZGoodsHandheldCell.m in Sources */,
 				A267C87C208C880E000A3C64 /* HDZGridItem.m in Sources */,
@@ -781,6 +810,7 @@
 				A2647B5720808D2A00B466FE /* HDZProductViewController.m in Sources */,
 				A269DBB6207AFB0D004418A4 /* HDZSlideOutAnimationController.m in Sources */,
 				A2AC7BB02073BF3700C04707 /* HDZDetailViewController.m in Sources */,
+				A2B9798320976D1B008328FC /* HDZNewWelfareLayout.m in Sources */,
 				A2698C6F20831DC70059FB22 /* HDZImageCollectionCell.m in Sources */,
 				A274BAED208D6A610061277B /* HDZGoodsYouLikeCell.m in Sources */,
 				A274BB05208D6D210061277B /* HDZSlideshowHeadView.m in Sources */,
@@ -804,7 +834,9 @@
 				A29BB559208F27E000ADECA9 /* UIColor+HDZColorTranslation.m in Sources */,
 				A274BAF6208D6B7F0061277B /* HDZNewWelfareCell.m in Sources */,
 				A26CF76B20765E130043395C /* HDZGradientView.m in Sources */,
+				A277A42E20998B870002915E /* DCTitleRolling.m in Sources */,
 				A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */,
+				A277A4322099B42B0002915E /* HDZGoodsSurplusCell.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
 				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
 				A274BAF0208D6B3C0061277B /* HDZGoodsGridCell.m in Sources */,

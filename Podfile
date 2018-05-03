@@ -6,5 +6,6 @@ pod 'SDCycleScrollView'
 pod 'Masonry'
 pod 'SVProgressHUD'
 pod 'AFNetworking'
+pod 'MJExtension'
 pod 'Reveal-SDK', :configurations => ['Debug']
 end

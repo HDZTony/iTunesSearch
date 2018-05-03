@@ -10,4 +10,6 @@
 
 @interface HDZGoodsHandheldCell : UICollectionViewCell
 
+/* 图片数组 */
+@property (strong , nonatomic)NSString *handheldImage;
 @end

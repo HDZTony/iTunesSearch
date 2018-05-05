@@ -12,6 +12,7 @@
 		A211D0E7206E307F0085CEBA /* HDZSearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A211D0E5206E307F0085CEBA /* HDZSearchResultCell.xib */; };
 		A24E9B59207137360060CF92 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A24E9B55207137360060CF92 /* NSObject+YYModel.m */; };
 		A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A24E9B57207137360060CF92 /* YYClassInfo.m */; };
+		A261034B209D9A2D005F7481 /* HDZTextImageSeparateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A261034A209D9A2D005F7481 /* HDZTextImageSeparateButton.m */; };
 		A2647B5420808CAC00B466FE /* HDZAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2647B5320808CAC00B466FE /* HDZAttentionViewController.m */; };
 		A2647B5720808D2A00B466FE /* HDZProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2647B5620808D2A00B466FE /* HDZProductViewController.m */; };
 		A2647B5A20808E4600B466FE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A2647B5920808E4600B466FE /* UIView+Frame.m */; };
@@ -105,6 +106,8 @@
 		A24E9B56207137360060CF92 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
 		A24E9B57207137360060CF92 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		A24E9B58207137360060CF92 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		A2610349209D9A2D005F7481 /* HDZTextImageSeparateButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZTextImageSeparateButton.h; sourceTree = "<group>"; };
+		A261034A209D9A2D005F7481 /* HDZTextImageSeparateButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZTextImageSeparateButton.m; sourceTree = "<group>"; };
 		A2647B5220808CAC00B466FE /* HDZAttentionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZAttentionViewController.h; sourceTree = "<group>"; };
 		A2647B5320808CAC00B466FE /* HDZAttentionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZAttentionViewController.m; sourceTree = "<group>"; };
 		A2647B5520808D2A00B466FE /* HDZProductViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZProductViewController.h; sourceTree = "<group>"; };
@@ -350,6 +353,8 @@
 				A274BAF4208D6B7F0061277B /* HDZNewWelfareCell.h */,
 				A274BAF5208D6B7F0061277B /* HDZNewWelfareCell.m */,
 				A274BAF7208D6BC20061277B /* HDZTopLineFootView.h */,
+				A2610349209D9A2D005F7481 /* HDZTextImageSeparateButton.h */,
+				A261034A209D9A2D005F7481 /* HDZTextImageSeparateButton.m */,
 				A274BAF8208D6BC20061277B /* HDZTopLineFootView.m */,
 				A274BAFA208D6BED0061277B /* HDZOverFootView.h */,
 				A274BAFB208D6BED0061277B /* HDZOverFootView.m */,
@@ -839,6 +844,7 @@
 				A277A4322099B42B0002915E /* HDZGoodsSurplusCell.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
 				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
+				A261034B209D9A2D005F7481 /* HDZTextImageSeparateButton.m in Sources */,
 				A274BAF0208D6B3C0061277B /* HDZGoodsGridCell.m in Sources */,
 				A2843441207C63920051B6A4 /* HDZMessageViewController.m in Sources */,
 				A267C873208C6751000A3C64 /* HDZMallViewController.m in Sources */,

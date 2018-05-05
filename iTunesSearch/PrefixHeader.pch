@@ -32,10 +32,10 @@
 #define ScreenW [UIScreen mainScreen].bounds.size.width
 
 
-#define Font20 [UIFont fontWithName:"PingFangSC-Regular" size:20];
-#define Font18 [UIFont fontWithName:"PingFangSC-Regular" size:18];
-#define Font16 [UIFont fontWithName:"PingFangSC-Regular" size:16];
-#define Font15 [UIFont fontWithName:"PingFangSC-Regular" size:15];
+#define Font20 [UIFont fontWithName:@"PingFangSC-Regular" size:20];
+#define Font18 [UIFont fontWithName:@"PingFangSC-Regular" size:18];
+#define Font16 [UIFont fontWithName:@"PingFangSC-Regular" size:16];
+#define Font15 [UIFont fontWithName:@"PingFangSC-Regular" size:15];
 #define Font14 [UIFont fontWithName:@"PingFangSC-Regular" size:14];
 #define Font13 [UIFont fontWithName:@"PingFangSC-Regular" size:13];
 #define Font12 [UIFont fontWithName:@"PingFangSC-Regular" size:12];

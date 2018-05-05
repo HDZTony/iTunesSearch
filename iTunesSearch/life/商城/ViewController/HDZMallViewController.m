@@ -104,7 +104,7 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
     [_backTopButton addTarget:self action:@selector(scrollToTop) forControlEvents:UIControlEventTouchUpInside];
     [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
     _backTopButton.hidden = YES;
-    _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 110, 40, 40);
+    _backTopButton.frame = CGRectMake(ScreenW - 50, ScreenH - 160, 40, 40);
 }
 - (void)scrollToTop{
     [self.collectionView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "HDZRecommendItem.h"
 @interface HDZGoodsYouLikeCell : UICollectionViewCell
-
+/* 推荐数据 */
+@property (strong , nonatomic)HDZRecommendItem *youLikeItem;
+/* 相同 */
+@property (strong , nonatomic)UIButton *sameButton;
+/** 找相似点击回调 */
+@property (nonatomic, copy) dispatch_block_t lookSameBlock;
 @end

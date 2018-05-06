@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HDZExceedApplianceCell : UICollectionViewCell
-
+/* 推荐图片数组 */
+@property (copy , nonatomic)NSArray *goodExceedArray;
 @end

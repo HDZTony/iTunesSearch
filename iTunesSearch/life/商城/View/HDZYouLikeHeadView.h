@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HDZYouLikeHeadView : UICollectionReusableView
-
+/* 标题图片 */
+@property (strong , nonatomic)UIImageView *likeImageView;
 @end

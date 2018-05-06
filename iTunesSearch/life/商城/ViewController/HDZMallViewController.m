@@ -24,6 +24,8 @@
 #import "HDZTopLineFootView.h"    //热点
 #import "HDZOverFootView.h"       //结束
 #import "HDZScrollAdFootView.h"   //底滚动广告
+
+#import <UIImageView+WebCache.h>
 @interface HDZMallViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong)UICollectionView *collectionView;
 @property (nonatomic, strong)UIButton *backTopButton;
@@ -75,7 +77,7 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.collectionView.backgroundColor = HDZBGColor;
+    self.collectionView.backgroundColor = [UIColor whiteColor];
     [self setUpGoodsData];
     [self setUpScrollToTopView];
 }
@@ -97,7 +99,6 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
     
 }
 //Status bar could not find cached time string image. Rendering in-process.
-//按钮没有实现
 - (void)setUpScrollToTopView{
     _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:_backTopButton];
@@ -134,19 +135,24 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
             break;
         case 3:{
              HDZExceedApplianceCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HDZExceedApplianceCellID forIndexPath:indexPath];
-            cell.backgroundColor = HDZRandomColor;
+            cell.goodExceedArray = GoodsRecommendArray;
             gridCell = cell;
         }
             break;
         case 4:{
             HDZGoodsHandheldCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HDZGoodsHandheldCellID forIndexPath:indexPath];
             cell.backgroundColor = HDZRandomColor;
+            NSArray *images = GoodsHandheldImagesArray;
+            cell.handheldImage = images[indexPath.row];
             gridCell = cell;
         }
             break;
         case 5:{
             HDZGoodsYouLikeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HDZGoodsYouLikeCellID forIndexPath:indexPath];
-            cell.backgroundColor = HDZRandomColor;
+            cell.lookSameBlock = ^{
+                NSLog(@"点击了第%zd商品的找相似",indexPath.row);
+            };
+            cell.youLikeItem = _youLikeItem[indexPath.row];
             gridCell = cell;
         }
     }
@@ -166,11 +172,11 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
             reusableview = headerView;
         }else if (indexPath.section == 4){
             HDZYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HDZYouLikeHeadViewID forIndexPath:indexPath];
-            headerView.backgroundColor = HDZRandomColor;
+            [headerView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs7.gomein.net.cn/T1WudvBm_T1RCvBVdK.png"]];
             reusableview = headerView;
         }else if (indexPath.section == 5){
             HDZYouLikeHeadView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:HDZYouLikeHeadViewID forIndexPath:indexPath];
-            headerView.backgroundColor = HDZRandomColor;
+            [headerView.likeImageView sd_setImageWithURL:[NSURL URLWithString:@"http://gfs5.gomein.net.cn/T16LLvByZj1RCvBVdK.png"]];
             reusableview = headerView;
         }
         
@@ -178,15 +184,12 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
     if (kind == UICollectionElementKindSectionFooter) {
         if (indexPath.section == 0) {
             HDZTopLineFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HDZTopLineFootViewID forIndexPath:indexPath];
-            footerView.backgroundColor = HDZRandomColor;
             reusableview = footerView;
         }else if (indexPath.section == 3){
             HDZScrollAdFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HDZScrollAdFootViewID forIndexPath:indexPath];
-            footerView.backgroundColor = HDZRandomColor;
             reusableview = footerView;
         }else if (indexPath.section == 5) {
             HDZOverFootView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:HDZOverFootViewID forIndexPath:indexPath];
-            footerView.backgroundColor = HDZRandomColor;
             reusableview = footerView;
         }
     }
@@ -246,8 +249,8 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
             case 1: case 2: case 3: case 4:
                 layoutAttributes.size = CGSizeMake(ScreenW * 0.5,ScreenW * 0.24);
                 break;
-            default:
-                layoutAttributes.size = CGSizeMake(ScreenW *0.5, ScreenW * 0.35);
+            case 5: case 6: case 7: case 8:
+                layoutAttributes.size = CGSizeMake(ScreenW *0.25, ScreenW * 0.35);
                 break;
         }
     }

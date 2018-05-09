@@ -22,6 +22,8 @@ static NSString *const kloadingCell = @"LoadingCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.search = [[HDZSearch alloc] init];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 44.0;
     UINib *cell = [UINib nibWithNibName:kHDZAttentionCell bundle:nil];
     [self.tableView registerNib:cell forCellReuseIdentifier:kHDZAttentionCell];
     cell = [UINib nibWithNibName:knothingFoundCell bundle:nil];
@@ -29,7 +31,7 @@ static NSString *const kloadingCell = @"LoadingCell";
     cell = [UINib nibWithNibName:kloadingCell bundle:nil];
     [self.tableView registerNib:cell forCellReuseIdentifier:kloadingCell];
     [self performSearch];
-
+    
 }
 
 - (void)performSearch{
@@ -78,15 +80,18 @@ static NSString *const kloadingCell = @"LoadingCell";
     }else{
         HDZAttentionCell * cell = [self.tableView dequeueReusableCellWithIdentifier:kHDZAttentionCell forIndexPath:indexPath];
         HDZSearchResult *searchResult = self.search.searchResults[indexPath.row];
-        [cell configureForResult:searchResult];
+        [cell configureForResult:searchResult indexPath:indexPath];
+        [cell setNeedsUpdateConstraints];
+        [cell setNeedsLayout];
+        [cell layoutIfNeeded];
         return cell;
     }
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    HDZSearchResult *searchResult = self.search.searchResults[indexPath.row];
-    NSLog(@"searchResult.attentionCellHeight --%f",searchResult.attentionCellHeight);
-    return searchResult.attentionCellHeight;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    HDZSearchResult *searchResult = self.search.searchResults[indexPath.row];
+//    NSLog(@"searchResult.attentionCellHeight --%f",searchResult.attentionCellHeight);
+//    return searchResult.attentionCellHeight;
+//}
 
 
 @end

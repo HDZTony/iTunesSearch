@@ -31,7 +31,7 @@
     // Configure the view for the selected state
 }
 // MARK:- Public Methods
-- (void)configureForResult:(HDZSearchResult *)result{
+- (void)configureForResult:(HDZSearchResult *)result indexPath:(NSIndexPath * )indexPath{
     self.nameLabel.text = result.name;
     if (!result.artistName) {
         self.tiemeLabel.text = @"Unknow";
@@ -43,25 +43,32 @@
     if (smallURL) {
         self.downloadTask = [self.thumbnailIamge loadImageWithURL:smallURL];
     }
-    CGFloat collectionViewWidth =  [result collectionViewWidthWithCount:result.imageCount];
-    CGFloat collectionViewHeight =  [result collectionViewHeightWithCount:result.imageCount];
+    if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5) {
+        self.contentLabel.text = nil;
+    }else{
+        self.contentLabel.text = result.collectionViewUrl;
+    }
     
-    self.middleViewHeight.constant = collectionViewHeight;
-    [self layoutIfNeeded];
+    self.contentLabel.backgroundColor = HDZRandomColor;
+//    CGFloat collectionViewWidth =  [result collectionViewWidthWithCount:result.imageCount];
+//    CGFloat collectionViewHeight =  [result collectionViewHeightWithCount:result.imageCount];
+    
+    //self.middleViewHeight.constant = collectionViewHeight;
+   // [self layoutIfNeeded];
 //    if ([self.middleView.subviews.firstObject isMemberOfClass:[HDZImageCollectionView class]]) {
 //        [self.imageCollectionView removeFromSuperview];
 //    }
-    if (result.imageCount != 0) {
-        self.imageCollectionView.frame = CGRectMake(15, 0,collectionViewWidth,collectionViewHeight);
-        NSMutableArray *images = [NSMutableArray array];
-        for (NSInteger i = 0; i<result.imageCount; i++) {
-            [images addObject:result.imageSmall];
-        }
-        self.imageCollectionView.thumbImages = images;
-        self.middleView.backgroundColor = [UIColor blueColor];
-        self.imageCollectionView.backgroundColor = HDZRandomColor;
-        [self.middleView addSubview:self.imageCollectionView];
-    }
+//    if (result.imageCount != 0) {
+//        self.imageCollectionView.frame = CGRectMake(15, 0,collectionViewWidth,collectionViewHeight);
+//        NSMutableArray *images = [NSMutableArray array];
+//        for (NSInteger i = 0; i<result.imageCount; i++) {
+//            [images addObject:result.imageSmall];
+//        }
+        //self.imageCollectionView.thumbImages = images;
+        //self.middleView.backgroundColor = [UIColor blueColor];
+        //self.imageCollectionView.backgroundColor = HDZRandomColor;
+        //[self.middleView addSubview:self.imageCollectionView];
+//    }
     
 }
 @end

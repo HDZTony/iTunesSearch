@@ -16,5 +16,5 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentLabelHeight;
 @property (weak, nonatomic) IBOutlet UIView *middleView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *middleViewHeight;
-- (void)configureForResult:(HDZSearchResult *)result;
+- (void)configureForResult:(HDZSearchResult *)result indexPath:(NSIndexPath *)indexPath;
 @end

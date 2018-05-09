@@ -48,9 +48,9 @@
     
     self.middleViewHeight.constant = collectionViewHeight;
     [self layoutIfNeeded];
-    if ([self.middleView.subviews.firstObject isMemberOfClass:[HDZImageCollectionView class]]) {
-        [self.imageCollectionView removeFromSuperview];
-    }
+//    if ([self.middleView.subviews.firstObject isMemberOfClass:[HDZImageCollectionView class]]) {
+//        [self.imageCollectionView removeFromSuperview];
+//    }
     if (result.imageCount != 0) {
         self.imageCollectionView.frame = CGRectMake(15, 0,collectionViewWidth,collectionViewHeight);
         NSMutableArray *images = [NSMutableArray array];
@@ -59,6 +59,7 @@
         }
         self.imageCollectionView.thumbImages = images;
         self.middleView.backgroundColor = [UIColor blueColor];
+        self.imageCollectionView.backgroundColor = HDZRandomColor;
         [self.middleView addSubview:self.imageCollectionView];
     }
     

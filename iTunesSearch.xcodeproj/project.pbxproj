@@ -72,6 +72,8 @@
 		A2AC7BB02073BF3700C04707 /* HDZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AC7BAF2073BF3700C04707 /* HDZDetailViewController.m */; };
 		A2B9798320976D1B008328FC /* HDZNewWelfareLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B9798220976D1B008328FC /* HDZNewWelfareLayout.m */; };
 		A2C1CEE62073297F008662FB /* UIImageView+HDZDownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */; };
+		A2E9CCA820A0826600A433F3 /* HDZGoodBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E9CCA720A0826600A433F3 /* HDZGoodBaseViewController.m */; };
+		A2F30D2E209F6F76003C50DD /* HDZGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F30D2D209F6F76003C50DD /* HDZGoodDetailViewController.m */; };
 		A2F4D07B206F68EE00AE12D3 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */; };
 		A2FC2E522074727F0017D7A6 /* HDZDimmingPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2FC2E512074727F0017D7A6 /* HDZDimmingPresentationController.m */; };
 		C4E0D1FA108A38A71A800231 /* libPods-iTunesSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9B831C1FE1B7136593781A9 /* libPods-iTunesSearch.a */; };
@@ -221,6 +223,10 @@
 		A2B9798220976D1B008328FC /* HDZNewWelfareLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZNewWelfareLayout.m; sourceTree = "<group>"; };
 		A2C1CEE42073297F008662FB /* UIImageView+HDZDownloadImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HDZDownloadImage.h"; sourceTree = "<group>"; };
 		A2C1CEE52073297F008662FB /* UIImageView+HDZDownloadImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HDZDownloadImage.m"; sourceTree = "<group>"; };
+		A2E9CCA620A0826600A433F3 /* HDZGoodBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodBaseViewController.h; sourceTree = "<group>"; };
+		A2E9CCA720A0826600A433F3 /* HDZGoodBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodBaseViewController.m; sourceTree = "<group>"; };
+		A2F30D2C209F6F76003C50DD /* HDZGoodDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZGoodDetailViewController.h; sourceTree = "<group>"; };
+		A2F30D2D209F6F76003C50DD /* HDZGoodDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZGoodDetailViewController.m; sourceTree = "<group>"; };
 		A2F4D07A206F68EE00AE12D3 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 		A2FC2E502074727F0017D7A6 /* HDZDimmingPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDZDimmingPresentationController.h; sourceTree = "<group>"; };
 		A2FC2E512074727F0017D7A6 /* HDZDimmingPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDZDimmingPresentationController.m; sourceTree = "<group>"; };
@@ -333,6 +339,10 @@
 			children = (
 				A267C871208C6751000A3C64 /* HDZMallViewController.h */,
 				A267C872208C6751000A3C64 /* HDZMallViewController.m */,
+				A2F30D2C209F6F76003C50DD /* HDZGoodDetailViewController.h */,
+				A2F30D2D209F6F76003C50DD /* HDZGoodDetailViewController.m */,
+				A2E9CCA620A0826600A433F3 /* HDZGoodBaseViewController.h */,
+				A2E9CCA720A0826600A433F3 /* HDZGoodBaseViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -841,9 +851,11 @@
 				A26CF76B20765E130043395C /* HDZGradientView.m in Sources */,
 				A277A42E20998B870002915E /* DCTitleRolling.m in Sources */,
 				A24E9B5A207137360060CF92 /* YYClassInfo.m in Sources */,
+				A2E9CCA820A0826600A433F3 /* HDZGoodBaseViewController.m in Sources */,
 				A277A4322099B42B0002915E /* HDZGoodsSurplusCell.m in Sources */,
 				A268D9F0206D3AD400C413B6 /* AppDelegate.m in Sources */,
 				A268DA22206D3DE400C413B6 /* HDZSearchResult.m in Sources */,
+				A2F30D2E209F6F76003C50DD /* HDZGoodDetailViewController.m in Sources */,
 				A261034B209D9A2D005F7481 /* HDZTextImageSeparateButton.m in Sources */,
 				A274BAF0208D6B3C0061277B /* HDZGoodsGridCell.m in Sources */,
 				A2843441207C63920051B6A4 /* HDZMessageViewController.m in Sources */,

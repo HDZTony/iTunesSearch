@@ -7,6 +7,7 @@
 //
 
 #import "HDZMallViewController.h"
+#import "HDZGoodDetailViewController.h"
 #import "HDZGridItem.h"
 #import "HDZRecommendItem.h"
 /* cell */
@@ -302,4 +303,12 @@ static NSString *const HDZScrollAdFootViewID = @"HDZScrollAdFootView";
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
     return (section == 5) ? 4 : 0;
 }
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 5) {
+        HDZGoodDetailViewController *detailVC = [[HDZGoodDetailViewController alloc] init];
+        [self.navigationController pushViewController:detailVC animated:YES];
+    }
+}
+
 @end
